@@ -9,6 +9,8 @@ public class HelloController {
 
     @FXML
     protected void onHelloButtonClick() {
+
         welcomeText.setText("Welcome to Fish Hatchery Management App!");
+        System.out.print("Hello");
     }
 }
