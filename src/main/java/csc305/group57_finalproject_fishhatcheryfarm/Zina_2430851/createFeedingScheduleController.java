@@ -2,29 +2,30 @@ package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class recordFoodConsumptionController
+public class createFeedingScheduleController
 {
     @javafx.fxml.FXML
     private ComboBox<String> fishSpeciesCB;
     @javafx.fxml.FXML
-    private Label outputLabel;
+    private Label scheduleLabel;
     @javafx.fxml.FXML
-    private TextField foodQuantityTF;
+    private TextField dayOfFeedingTF;
     @javafx.fxml.FXML
-    private TextArea additionalinfoTA;
+    private TextField foodDistributedTF;
     @javafx.fxml.FXML
-    private TextField foodConsumedTF;
+    private DatePicker feedDateDP;
     @javafx.fxml.FXML
-    private ComboBox<String> growthStageCB;
+    private TextField tankIdTF;
+    @javafx.fxml.FXML
+    private TextField assignedSectionTF;
 
     @javafx.fxml.FXML
     public void initialize() {
         fishSpeciesCB.getItems().addAll("Mackerel","Catfish","Snapper","Tilapia","Salmon","Tuna","CodFish","Sardines");
-        growthStageCB.getItems().addAll("Newborn","Juvenile","Adult");
     }
 
     @javafx.fxml.FXML
@@ -32,6 +33,6 @@ public class recordFoodConsumptionController
     }
 
     @javafx.fxml.FXML
-    public void recordConsumptionButtonOA(ActionEvent actionEvent) {
+    public void createScheduleButtonOA(ActionEvent actionEvent) {
     }
 }

@@ -6,13 +6,15 @@ public class fishStock {
     private String healthStatus;
     private String tankID;
     private String growthStage;
+    private int feedSessionsPerDay;
 
-    public fishStock(String fishSpecies, String batchID, String healthStatus, String tankID, String growthStage) {
+    public fishStock(String fishSpecies, String batchID, String healthStatus, String tankID, String growthStage, int feedSessionsPerDay) {
         this.fishSpecies = fishSpecies;
         this.batchID = batchID;
         this.healthStatus = healthStatus;
         this.tankID = tankID;
         this.growthStage = growthStage;
+        this.feedSessionsPerDay = feedSessionsPerDay;
     }
 
     public String getFishSpecies() {
@@ -55,6 +57,14 @@ public class fishStock {
         this.growthStage = growthStage;
     }
 
+    public int getFeedSessionsPerDay() {
+        return feedSessionsPerDay;
+    }
+
+    public void setFeedSessionsPerDay(int feedSessionsPerDay) {
+        this.feedSessionsPerDay = feedSessionsPerDay;
+    }
+
     @Override
     public String toString() {
         return "fishStock{" +
@@ -63,6 +73,7 @@ public class fishStock {
                 ", healthStatus='" + healthStatus + '\'' +
                 ", tankID='" + tankID + '\'' +
                 ", growthStage='" + growthStage + '\'' +
+                ", feedSessionsPerDay=" + feedSessionsPerDay +
                 '}';
     }
 }
