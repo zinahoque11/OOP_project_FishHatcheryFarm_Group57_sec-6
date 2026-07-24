@@ -4,16 +4,18 @@ import java.time.LocalDate;
 
 public class Medication {
     private String medType;
-    private float dosage;
-    private LocalDate expiryDate;
+    private float dosage,quantity;
+    private LocalDate expiryDate,deliveryDate;
     private String tankID;
     private String fishSpecies;
     private int medDurationDays;
 
-    public Medication(String medType, float dosage, LocalDate expiryDate, String tankID, String fishSpecies, int medDurationDays) {
+    public Medication(String medType, float dosage, float quantity, LocalDate expiryDate, LocalDate deliveryDate, String tankID, String fishSpecies, int medDurationDays) {
         this.medType = medType;
         this.dosage = dosage;
+        this.quantity = quantity;
         this.expiryDate = expiryDate;
+        this.deliveryDate = deliveryDate;
         this.tankID = tankID;
         this.fishSpecies = fishSpecies;
         this.medDurationDays = medDurationDays;
@@ -35,12 +37,28 @@ public class Medication {
         this.dosage = dosage;
     }
 
+    public float getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(float quantity) {
+        this.quantity = quantity;
+    }
+
     public LocalDate getExpiryDate() {
         return expiryDate;
     }
 
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    public LocalDate getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public void setDeliveryDate(LocalDate deliveryDate) {
+        this.deliveryDate = deliveryDate;
     }
 
     public String getTankID() {
@@ -72,7 +90,9 @@ public class Medication {
         return "Medication{" +
                 "medType='" + medType + '\'' +
                 ", dosage=" + dosage +
+                ", quantity=" + quantity +
                 ", expiryDate=" + expiryDate +
+                ", deliveryDate=" + deliveryDate +
                 ", tankID='" + tankID + '\'' +
                 ", fishSpecies='" + fishSpecies + '\'' +
                 ", medDurationDays=" + medDurationDays +

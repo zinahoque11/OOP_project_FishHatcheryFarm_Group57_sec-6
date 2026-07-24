@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.supplyMedController">
+   <children>
+      <Label layoutX="37.0" layoutY="30.0" text="Med Type:" />
+      <Label layoutX="37.0" layoutY="77.0" text="Quantity Supplied:" />
+      <Label layoutX="327.0" layoutY="30.0" text="Delivery Date:" />
+      <TextField fx:id="medTypeTF" layoutX="102.0" layoutY="26.0" />
+      <TextField fx:id="quantitySuppliedTF" layoutX="143.0" layoutY="73.0" />
+      <Label layoutX="340.0" layoutY="77.0" text="Expiry Date:" />
+      <TableView fx:id="medSuppliesTV" layoutX="28.0" layoutY="182.0" prefHeight="200.0" prefWidth="544.0">
+        <columns>
+          <TableColumn fx:id="medTypeColumn" prefWidth="107.33331298828125" text="Med Type" />
+          <TableColumn fx:id="deliveryDateColumn" prefWidth="152.00003051757812" text="Delivery Date" />
+            <TableColumn fx:id="quantitySuppliedColumn" prefWidth="148.66668701171875" text="Qauntity Supplied" />
+            <TableColumn fx:id="expiryDateColumn" prefWidth="136.00006103515625" text="Expiry Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="251.0" layoutY="131.0" mnemonicParsing="false" onAction="#addMedSuppliesButton" text="Add Med Supplies" />
+      <Button layoutX="499.0" layoutY="412.0" mnemonicParsing="false" onAction="#backButtonOA" prefHeight="25.0" prefWidth="80.0" text="Back" />
+      <Button layoutX="252.0" layoutY="399.0" mnemonicParsing="false" onAction="#viewListButton" prefHeight="25.0" prefWidth="80.0" text="View" />
+      <DatePicker fx:id="expiryDateDP" layoutX="412.0" layoutY="73.0" />
+      <DatePicker fx:id="deliveryDateDP" layoutX="412.0" layoutY="26.0" />
+   </children>
+</AnchorPane>

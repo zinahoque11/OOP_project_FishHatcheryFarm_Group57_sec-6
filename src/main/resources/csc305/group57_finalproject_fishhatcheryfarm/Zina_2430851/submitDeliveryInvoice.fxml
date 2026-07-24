@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.submitDeliveryInvoiceController">
+   <children>
+      <Label layoutX="46.0" layoutY="30.0" text="Payment Status:" />
+      <Label layoutX="325.0" layoutY="38.0" text="Invoice ID:" />
+      <Label layoutX="46.0" layoutY="81.0" text="Product Name:" />
+      <Label layoutX="325.0" layoutY="89.0" text="Product Type:" />
+      <Label layoutX="46.0" layoutY="125.0" text="Quantity Delivered:" />
+      <Label layoutX="332.0" layoutY="137.0" text="Total Amount:" />
+      <Label layoutX="46.0" layoutY="168.0" text="Delivery Date:" />
+      <ComboBox fx:id="paymentStatusCB" layoutX="137.0" layoutY="26.0" prefWidth="150.0" />
+      <ComboBox fx:id="productTypeCB" layoutX="408.0" layoutY="85.0" prefWidth="150.0" />
+      <DatePicker fx:id="deliveryDateDP" layoutX="131.0" layoutY="164.0" />
+      <TextField fx:id="productNameTF" layoutX="138.0" layoutY="77.0" />
+      <TextField fx:id="invoiceIDTF" layoutX="390.0" layoutY="34.0" />
+      <TextField fx:id="totalAmountTF" layoutX="426.0" layoutY="133.0" />
+      <TextField fx:id="quantityDeliveredTF" layoutX="156.0" layoutY="121.0" />
+      <Button layoutX="71.0" layoutY="298.0" mnemonicParsing="false" onAction="#submitInvoiceButton" prefHeight="25.0" prefWidth="466.0" text="Submit Invoice" />
+      <Button layoutX="501.0" layoutY="393.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="63.0" text="Back" />
+   </children>
+</AnchorPane>
