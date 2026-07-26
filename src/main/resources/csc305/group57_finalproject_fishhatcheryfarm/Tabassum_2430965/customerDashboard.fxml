@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.customerDashboardcontroller">
+   <children>
+      <Label layoutX="196.0" layoutY="14.0" text="Customer Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="79.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="569.0" text="View Fish And Eggs available in stock" />
+      <Button layoutX="14.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="View previouspurchase history from the hatchery" />
+      <Button layoutX="14.0" layoutY="223.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Make payment forhatchery orders" />
+      <Button layoutX="14.0" layoutY="174.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Track the order status" />
+      <Button layoutX="14.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Place order for fish orfish eggs" />
+      <Button layoutX="14.0" layoutY="270.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Cancel order before theorder is prepared" />
+      <Button layoutX="14.0" layoutY="410.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Delivery of fish products" />
+      <Button layoutX="13.0" layoutY="361.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Request supportregarding damaged and dead fish delivery" />
+   </children>
+</AnchorPane>
