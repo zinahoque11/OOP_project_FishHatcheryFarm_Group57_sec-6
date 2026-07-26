@@ -6,7 +6,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="519.0" prefWidth="659.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.supplierDashboardController">
    <children>
       <Text fill="#0c178f" layoutX="141.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Supplier Dashboard" textAlignment="CENTER" wrappingWidth="329.2454528808594">
@@ -50,7 +49,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="35.0" layoutY="422.0" mnemonicParsing="false" onAction="#recordNewSupplyShipmentsButton" prefHeight="25.0" prefWidth="577.0" style="-fx-background-color: #4682B4;" text="Record newly arrived equipment and supply shipments" textFill="#ededed">
+      <Button layoutX="35.0" layoutY="422.0" mnemonicParsing="false" onAction="#recordNewSupplyShipmentsButton" prefHeight="25.0" prefWidth="577.0" style="-fx-background-color: #4682B4;" text="Update Contract Details" textFill="#ededed">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
