@@ -1,8 +1,9 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class restockRequest {
+public class restockRequest implements Serializable {
     private String reqId;
     private String productType;
     private float requestedQuantity;

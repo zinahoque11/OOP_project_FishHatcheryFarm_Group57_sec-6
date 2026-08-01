@@ -1,8 +1,9 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Medication {
+public class Medication implements Serializable {
     private String medType;
     private float dosage,quantity;
     private LocalDate expiryDate,deliveryDate;
