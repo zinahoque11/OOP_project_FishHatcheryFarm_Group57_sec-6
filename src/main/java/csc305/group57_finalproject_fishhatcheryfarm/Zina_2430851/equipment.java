@@ -1,6 +1,8 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
-public class equipment {
+import java.io.Serializable;
+
+public class equipment implements Serializable {
     private String equipmentType, warrantyPeriod, condition;
     private boolean ifItsDamaged;
     private float quantity, unitPrice;

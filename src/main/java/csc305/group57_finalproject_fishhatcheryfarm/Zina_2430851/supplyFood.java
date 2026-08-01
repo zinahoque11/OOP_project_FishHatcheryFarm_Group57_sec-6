@@ -1,8 +1,9 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class supplyFood {
+public class supplyFood implements Serializable {
     private String productName, feedType;
     private float quantitySupplied, unitPrice;
     private LocalDate deliveryDate, expiryDate, MfgDate;
