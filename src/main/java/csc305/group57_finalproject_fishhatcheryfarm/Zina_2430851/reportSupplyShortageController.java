@@ -20,6 +20,8 @@ public class reportSupplyShortageController
     private TextField requestedQuantityTF;
     @javafx.fxml.FXML
     private DatePicker restockDateDP;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

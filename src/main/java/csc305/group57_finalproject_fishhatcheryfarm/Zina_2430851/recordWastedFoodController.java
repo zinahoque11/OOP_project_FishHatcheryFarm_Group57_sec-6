@@ -19,6 +19,8 @@ public class recordWastedFoodController
     private DatePicker dateDP;
     @javafx.fxml.FXML
     private TextField foodIntakeTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

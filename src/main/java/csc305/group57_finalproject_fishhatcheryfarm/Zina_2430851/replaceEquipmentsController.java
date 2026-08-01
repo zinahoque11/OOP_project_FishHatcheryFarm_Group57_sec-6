@@ -19,6 +19,8 @@ public class replaceEquipmentsController
     private ComboBox<String> equipTypeCB;
     @javafx.fxml.FXML
     private DatePicker replacementDateDP;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

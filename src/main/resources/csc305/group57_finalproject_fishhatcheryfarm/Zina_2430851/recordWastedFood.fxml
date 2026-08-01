@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
+<AnchorPane fx:id="mainPane" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
    <children>
       <Label layoutX="48.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Food Intake:">
          <font>

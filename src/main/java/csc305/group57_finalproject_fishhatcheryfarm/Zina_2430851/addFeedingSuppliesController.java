@@ -34,6 +34,8 @@ public class addFeedingSuppliesController
     private TableColumn<supplyFood,String> productColumn;
     @javafx.fxml.FXML
     private TableColumn<supplyFood, Float> priceColumn;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

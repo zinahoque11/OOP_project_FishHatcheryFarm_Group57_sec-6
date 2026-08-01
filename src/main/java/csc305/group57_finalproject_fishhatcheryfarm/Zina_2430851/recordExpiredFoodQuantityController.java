@@ -29,6 +29,8 @@ public class recordExpiredFoodQuantityController
     private TableColumn<foodInventory, Float> expiredFoodQuantityColumn;
     @javafx.fxml.FXML
     private TextField expiredFoodQuantityTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

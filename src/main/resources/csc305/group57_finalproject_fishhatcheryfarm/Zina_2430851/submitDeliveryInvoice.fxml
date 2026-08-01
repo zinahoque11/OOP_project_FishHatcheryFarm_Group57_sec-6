@@ -7,8 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.submitDeliveryInvoiceController">
+<AnchorPane fx:id="mainPane" prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.submitDeliveryInvoiceController">
    <children>
       <Label layoutX="46.0" layoutY="30.0" text="Payment Status:" />
       <Label layoutX="325.0" layoutY="38.0" text="Invoice ID:" />

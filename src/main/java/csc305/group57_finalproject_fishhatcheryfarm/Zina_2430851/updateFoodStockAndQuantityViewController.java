@@ -27,6 +27,8 @@ public class updateFoodStockAndQuantityViewController
     private TableColumn<foodInventory, String> foodQuantityColumn;
 
     ArrayList<foodInventory> inventoryUpdatedList = new ArrayList<>();
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

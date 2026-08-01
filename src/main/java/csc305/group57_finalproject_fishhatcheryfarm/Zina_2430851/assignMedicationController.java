@@ -31,6 +31,8 @@ public class assignMedicationController
     private TableView<Medication> medTableView;
     @javafx.fxml.FXML
     private TableColumn<Medication, Integer> durationColumn;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -26,6 +26,8 @@ public class updateFoodIntakeController
     private TableColumn<fishStock,String> growthStageColumn;
     @javafx.fxml.FXML
     private TextField healthStatusTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

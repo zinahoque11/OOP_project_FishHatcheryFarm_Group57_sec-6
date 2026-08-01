@@ -29,6 +29,8 @@ public class supplyMedController
     private TableColumn<Medication, Float> quantitySuppliedColumn;
     @javafx.fxml.FXML
     private TableColumn<Medication, String> medTypeColumn;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {
