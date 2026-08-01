@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="587.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.viewfishandeggController">
+<AnchorPane prefHeight="587.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.viewfishandeggController">
    <children>
       <Label layoutX="190.0" layoutY="14.0" prefHeight="27.0" prefWidth="205.0" text="View Fish and Egg stock">
          <font>
@@ -32,6 +31,7 @@
       </TableView>
       <Label layoutX="368.0" layoutY="83.0" text="Price:" />
       <TextField layoutX="410.0" layoutY="79.0" />
-      <Button layoutX="266.0" layoutY="518.0" mnemonicParsing="false" text="View" />
+      <Button layoutX="266.0" layoutY="518.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="View" />
+      <Button layoutX="508.0" layoutY="531.0" mnemonicParsing="false" text="Home Page" />
    </children>
 </AnchorPane>
