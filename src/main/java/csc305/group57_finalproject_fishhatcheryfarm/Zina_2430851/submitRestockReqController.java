@@ -15,6 +15,8 @@ public class submitRestockReqController
     private TextField requestedQuantityTF;
     @javafx.fxml.FXML
     private TextArea additionalInfoTA;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

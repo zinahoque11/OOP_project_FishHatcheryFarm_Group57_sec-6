@@ -5,6 +5,9 @@ import javafx.event.ActionEvent;
 public class supplierDashboardController
 {
     @javafx.fxml.FXML
+    private AnchorPane mainPane;
+
+    @javafx.fxml.FXML
     public void initialize() {
     }
 

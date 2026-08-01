@@ -9,8 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="475.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.addEquipmentSupplyController">
+<AnchorPane fx:id="mainPane" prefHeight="475.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.addEquipmentSupplyController">
    <children>
       <Label layoutX="28.0" layoutY="31.0" text="Equipment Type:" />
       <Label layoutX="311.0" layoutY="31.0" text="Quantity:" />

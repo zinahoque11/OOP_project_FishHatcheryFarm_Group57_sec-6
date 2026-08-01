@@ -22,6 +22,8 @@ public class createFeedingScheduleController
     private TextField tankIdTF;
     @javafx.fxml.FXML
     private TextField assignedSectionTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -34,5 +36,9 @@ public class createFeedingScheduleController
 
     @javafx.fxml.FXML
     public void createScheduleButtonOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void showScheduleOA(ActionEvent actionEvent) {
     }
 }

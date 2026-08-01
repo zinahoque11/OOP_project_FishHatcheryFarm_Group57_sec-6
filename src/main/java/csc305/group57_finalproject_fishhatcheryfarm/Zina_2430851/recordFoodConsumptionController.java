@@ -20,6 +20,8 @@ public class recordFoodConsumptionController
     private TextField foodConsumedTF;
     @javafx.fxml.FXML
     private ComboBox<String> growthStageCB;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

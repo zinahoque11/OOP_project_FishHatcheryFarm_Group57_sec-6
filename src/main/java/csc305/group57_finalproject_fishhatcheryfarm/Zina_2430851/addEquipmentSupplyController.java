@@ -30,6 +30,8 @@ public class addEquipmentSupplyController
     private TableColumn<equipment, Float> priceColumn;
     @javafx.fxml.FXML
     private TableColumn<equipment, String> conditionColumn;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

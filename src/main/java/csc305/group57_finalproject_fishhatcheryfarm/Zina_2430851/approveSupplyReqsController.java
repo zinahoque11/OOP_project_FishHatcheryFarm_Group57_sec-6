@@ -22,6 +22,8 @@ public class approveSupplyReqsController
     private TextField reqQuantityTF;
     @javafx.fxml.FXML
     private TextField productNameTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -19,6 +19,8 @@ public class updateContractDetailsController
     private TextArea termsAndConditionsTA;
     @javafx.fxml.FXML
     private TextField contractIdTF;
+    @javafx.fxml.FXML
+    private AnchorPane mainPane;
 
     @javafx.fxml.FXML
     public void initialize() {
