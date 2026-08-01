@@ -5,21 +5,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="438.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.DeliveryManDashboardController">
+<AnchorPane prefHeight="515.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.DeliveryManDashboardController">
    <children>
-      <Label layoutX="209.0" layoutY="23.0" text="Delivery Man Dashboard">
+      <Label layoutX="140.0" layoutY="28.0" text="Delivery Man Dashboard" textFill="#2841cc">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="63.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="569.0" text="View assigned deliveries" />
-      <Button layoutX="14.0" layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Updatetransportation status during delivery" />
-      <Button layoutX="12.0" layoutY="160.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Verify customerslocation before delivery" />
-      <Button layoutX="14.0" layoutY="206.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Confirm successfulfish delivery" />
-      <Button layoutX="14.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Report faileddelivery attempts" />
-      <Button layoutX="14.0" layoutY="295.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Collect cashpayment from customer" />
-      <Button layoutX="14.0" layoutY="338.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Report damaged fishshipment during transportation" />
-      <Button layoutX="14.0" layoutY="385.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Maintain deliverycompletion logs" />
+      <Button layoutX="14.0" layoutY="94.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="569.0" text="View assigned deliveries" />
+      <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Updatetransportation status during delivery" />
+      <Button layoutX="14.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Verify customerslocation before delivery" />
+      <Button layoutX="14.0" layoutY="232.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Confirm successfulfish delivery" />
+      <Button layoutX="15.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Report faileddelivery attempts" />
+      <Button layoutX="12.0" layoutY="320.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text=" Collect cashpayment from customer" />
+      <Button layoutX="15.0" layoutY="363.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Report damaged fishshipment during transportation" />
+      <Button layoutX="14.0" layoutY="406.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="570.0" text="Maintain deliverycompletion logs" />
+      <Button layoutX="274.0" layoutY="459.0" mnemonicParsing="false" text="Home Page" />
    </children>
 </AnchorPane>

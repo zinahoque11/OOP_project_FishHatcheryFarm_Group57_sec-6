@@ -3,6 +3,7 @@ package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
 
 public class addEquipmentSupplyController
 {
