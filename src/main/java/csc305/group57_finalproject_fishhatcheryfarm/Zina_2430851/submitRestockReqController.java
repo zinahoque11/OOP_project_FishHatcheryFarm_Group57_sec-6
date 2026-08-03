@@ -1,5 +1,6 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
@@ -30,5 +31,9 @@ public class submitRestockReqController
 
     @javafx.fxml.FXML
     public void backOA(ActionEvent actionEvent) {
+        //Home Page will load here
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
     }
 }

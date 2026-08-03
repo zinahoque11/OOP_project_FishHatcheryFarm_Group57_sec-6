@@ -1,5 +1,6 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -33,6 +34,9 @@ public class createFeedingScheduleController
 
     @javafx.fxml.FXML
     public void backButtonOA(ActionEvent actionEvent) {
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
     }
 
     @javafx.fxml.FXML
