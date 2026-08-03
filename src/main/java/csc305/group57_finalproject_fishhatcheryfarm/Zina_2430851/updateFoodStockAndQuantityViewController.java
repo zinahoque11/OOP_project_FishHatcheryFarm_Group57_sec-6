@@ -1,5 +1,6 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.BinaryFileUtil;
 import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
@@ -28,7 +29,8 @@ public class updateFoodStockAndQuantityViewController
     @javafx.fxml.FXML
     private TableColumn<foodInventory, String> foodQuantityColumn;
 
-    ArrayList<foodInventory> inventoryUpdatedList = new ArrayList<>();
+    private ArrayList<foodInventory> inventoryUpdatedList = new ArrayList<>();
+
     @javafx.fxml.FXML
     private AnchorPane mainPane;
 
@@ -50,5 +52,25 @@ public class updateFoodStockAndQuantityViewController
 
     @javafx.fxml.FXML
     public void saveUpdatesOA(ActionEvent actionEvent) {
+
+        foodInventory f = new foodInventory();
+
+        f.setFishSpecies(fishSpeciesCB.getValue());
+        f.setFoodQuantity(Float.parseFloat(foodQuantityTF.getText()));
+        f.setStockStatus(stockStatusCB.getValue());
+
+        inventoryUpdatedList.add(f);
+
+        BinaryFileUtil.saveList("data/foodinventory.bin",new ArrayList<foodInventory>(inventoryUpdatedList));
+
+
+    }
+
+    @javafx.fxml.FXML
+    public void showUpdatesButtonOA(ActionEvent actionEvent) {
+
+        ArrayList<foodInventory> list = BinaryFileUtil.readList("data/foodinventory.bin");
+        StockAndQuantityTableView.getItems().setAll(list);
+
     }
 }
