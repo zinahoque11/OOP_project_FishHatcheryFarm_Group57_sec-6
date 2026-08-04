@@ -19,7 +19,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="38.0" layoutY="261.0" mnemonicParsing="false" onAction="#updateFoodIntake" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4;" text="Update Food Intake" textFill="WHITE">
+      <Button layoutX="38.0" layoutY="261.0" mnemonicParsing="false" onAction="#updateFoodIntake" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4;" text="Record Feeding Sessions and Health Status" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
