@@ -47,69 +47,10 @@ public class recordFeedSessionController
     }
 
 
-
-    @javafx.fxml.FXML
-    public void updateFoodIntakeButtonOA(ActionEvent actionEvent) {
-        if(growthStageCB.getValue() == null || fishSpeciesCB.getValue() == null){
-            AlertUtil.errorAlert("Please select necessary fields.");
-            return;
-        }
-
-        if(feedingSessionsTF.getText().isEmpty()){
-            AlertUtil.errorAlert("Empty field: Feeding sessions today");
-            return;
-        }
-
-        int feedSession = Integer.parseInt(feedingSessionsTF.getText());
-
-        if(feedSession < 0){
-            AlertUtil.errorAlert("Negative value!");
-            return;
-        }
-
-        if(healthStatusTF.getText().isEmpty()){
-            AlertUtil.errorAlert("Empty field: Health Status.");
-            return;
-        }
-
-        fishStock fs = new fishStock();
-
-        fs.setGrowthStage(growthStageCB.getValue());
-        fs.setFishSpecies(fishSpeciesCB.getValue());
-        fs.setFeedSessionsPerDay(feedSession);
-        fs.setHealthStatus(healthStatusTF.getText());
-
-        File f = new File("Updated Food Intake.bin");
-        FileOutputStream fos;
-        ObjectOutputStream oos;
-
-        try{
-            if(f.exists()){
-                fos = new FileOutputStream(f, true);
-                oos = new AppendableObjectOutputStream(fos);
-            }
-
-            else{
-                fos = new FileOutputStream(f);
-                oos = new ObjectOutputStream(fos);
-            }
-
-            oos.writeObject(fs);
-            oos.close();
-            fos.close();
-
-        }
-
-        catch(Exception e){
-            e.printStackTrace();
-        }
-
-    }
-
     @javafx.fxml.FXML
     public void showUpdateButton(ActionEvent actionEvent) {
 
-        File f = new File("Updated Food Intake.bin");
+        File f = new File("Feeding Sessions.bin");
         try{
             FileInputStream fis = new FileInputStream(f);
             ObjectInputStream ois = new ObjectInputStream(fis);
@@ -144,5 +85,63 @@ public class recordFeedSessionController
         SceneSwitcher.switchScene(actionEvent,
                 "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
                 "Home Page");
+    }
+
+    @javafx.fxml.FXML
+    public void updateFeedSessionButtonOA(ActionEvent actionEvent) {
+        if(growthStageCB.getValue() == null || fishSpeciesCB.getValue() == null){
+            AlertUtil.errorAlert("Please select necessary fields.");
+            return;
+        }
+
+        if(feedingSessionsTF.getText().isEmpty()){
+            AlertUtil.errorAlert("Empty field: Feeding sessions today");
+            return;
+        }
+
+        int feedSession = Integer.parseInt(feedingSessionsTF.getText());
+
+        if(feedSession < 0){
+            AlertUtil.errorAlert("Negative value!");
+            return;
+        }
+
+        if(healthStatusTF.getText().isEmpty()){
+            AlertUtil.errorAlert("Empty field: Health Status.");
+            return;
+        }
+
+        fishStock fs = new fishStock();
+
+        fs.setGrowthStage(growthStageCB.getValue());
+        fs.setFishSpecies(fishSpeciesCB.getValue());
+        fs.setFeedSessionsPerDay(feedSession);
+        fs.setHealthStatus(healthStatusTF.getText());
+
+        File f = new File("Feeding Sessions.bin");
+        FileOutputStream fos;
+        ObjectOutputStream oos;
+
+        try{
+            if(f.exists()){
+                fos = new FileOutputStream(f, true);
+                oos = new AppendableObjectOutputStream(fos);
+            }
+
+            else{
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);
+            }
+
+            oos.writeObject(fs);
+            oos.close();
+            fos.close();
+
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
 }

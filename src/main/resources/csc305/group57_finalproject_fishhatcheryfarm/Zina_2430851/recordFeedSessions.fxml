@@ -30,7 +30,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="394.0" layoutY="135.0" mnemonicParsing="false" onAction="#updateFoodIntakeButtonOA" prefHeight="25.0" prefWidth="157.0" text="Update Food Intake" />
+      <Button layoutX="394.0" layoutY="135.0" mnemonicParsing="false" onAction="#updateFeedSessionButtonOA" prefHeight="25.0" prefWidth="157.0" text="Update Feed Session" />
       <TableView fx:id="foodIntakeTableView" layoutX="32.0" layoutY="186.0" prefHeight="200.0" prefWidth="550.0" style="-fx-background-color: white;">
         <columns>
           <TableColumn fx:id="fishSpeciesColumn" prefWidth="142.00003051757812" text="Fish Species" />
