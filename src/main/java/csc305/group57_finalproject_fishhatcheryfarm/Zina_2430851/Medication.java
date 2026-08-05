@@ -99,4 +99,8 @@ public class Medication implements Serializable {
                 ", medDurationDays=" + medDurationDays +
                 '}';
     }
+
+    public Medication(){
+        //
+    }
 }

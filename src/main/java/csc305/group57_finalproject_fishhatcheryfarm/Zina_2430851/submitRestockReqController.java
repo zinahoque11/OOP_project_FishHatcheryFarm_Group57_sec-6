@@ -1,5 +1,6 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.AlertUtil;
 import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
@@ -27,11 +28,32 @@ public class submitRestockReqController
 
     @javafx.fxml.FXML
     public void submitReqButtonOA(ActionEvent actionEvent) {
+
+        if(productNameTf.getText().isEmpty()){
+            AlertUtil.errorAlert("Please give product name.");
+            return;
+        }
+
+        if(requestedQuantityTF.getText().isEmpty()){
+
+            AlertUtil.errorAlert("Please give requested quantity.");
+            return;
+
+        }
+
+        if(productTypeCB.getValue() == null){
+            AlertUtil.errorAlert("Please select product type.");
+            return;
+        }
+
+        AlertUtil.infoAlert("Restock Request Submitted Successfully!");
+
     }
 
+
+
     @javafx.fxml.FXML
-    public void backOA(ActionEvent actionEvent) {
-        //Home Page will load here
+    public void homePageButton(ActionEvent actionEvent) {
         SceneSwitcher.switchScene(actionEvent,
                 "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
                 "Home Page");

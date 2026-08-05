@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.assignMedicationController">
+<AnchorPane fx:id="mainPane" prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.assignMedicationController">
    <children>
       <Label layoutX="33.0" layoutY="37.0" style="-fx-font-weight: bold;" text="TankID:">
          <font>
@@ -29,28 +29,29 @@
          </font>
       </Label>
       <TextField fx:id="medNameTF" layoutX="113.0" layoutY="78.0" />
-      <Label layoutX="293.0" layoutY="81.0" style="-fx-font-weight: bold;" text="Med Dosage:">
+      <Label layoutX="293.0" layoutY="81.0" style="-fx-font-weight: bold;" text="Med Dosage(in mg/L):">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="medDosageTF" layoutX="389.0" layoutY="78.0" />
+      <TextField fx:id="medDosageTF" layoutX="431.0" layoutY="78.0" />
       <TableView fx:id="medTableView" layoutX="26.0" layoutY="169.0" prefHeight="200.0" prefWidth="545.0">
         <columns>
           <TableColumn fx:id="tankIDcolumn" prefWidth="75.0" text="Tank ID" />
           <TableColumn fx:id="speciesColumn" prefWidth="97.33334350585938" text="Fish Species" />
-            <TableColumn fx:id="medNameColumn" prefWidth="151.33331298828125" text="Med Name" />
-            <TableColumn fx:id="medDosageColumn" prefWidth="136.66668701171875" text="Med Dosage" />
-            <TableColumn fx:id="durationColumn" prefWidth="83.99993896484375" text="Duration" />
+            <TableColumn fx:id="medNameColumn" prefWidth="126.0" text="Med Name" />
+            <TableColumn fx:id="medDosageColumn" prefWidth="137.0" text="Med Dosage" />
+            <TableColumn fx:id="durationColumn" prefWidth="110.0" text="Duration Days" />
         </columns>
       </TableView>
       <Button layoutX="31.0" layoutY="392.0" mnemonicParsing="false" onAction="#assignMedButton" prefHeight="25.0" prefWidth="149.0" text="Assign Med" />
-      <Button layoutX="504.0" layoutY="405.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="57.0" text="Back" />
+      <Button layoutX="481.0" layoutY="405.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="80.0" text="Home Page" />
       <Label layoutX="33.0" layoutY="119.0" style="-fx-font-weight: bold;" text="Duration of Days:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <TextField fx:id="durationTF" layoutX="149.0" layoutY="116.0" />
+      <Button layoutX="212.0" layoutY="393.0" mnemonicParsing="false" onAction="#showUpdatesOA" prefHeight="25.0" prefWidth="135.0" text="Show Updates" />
    </children>
 </AnchorPane>
