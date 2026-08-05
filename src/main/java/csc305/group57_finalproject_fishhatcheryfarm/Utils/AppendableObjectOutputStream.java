@@ -1,4 +1,4 @@
-package csc305.group57_finalproject_fishhatcheryfarm;
+package csc305.group57_finalproject_fishhatcheryfarm.Utils;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

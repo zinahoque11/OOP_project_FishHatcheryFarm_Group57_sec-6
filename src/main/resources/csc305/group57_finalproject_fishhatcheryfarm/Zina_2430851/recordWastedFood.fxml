@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
+<AnchorPane fx:id="mainPane" prefHeight="480.0" prefWidth="611.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
    <children>
-      <Label layoutX="48.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Food Intake:">
+      <Label layoutX="48.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Food Intake (in kg):" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="foodIntakeTF" layoutX="132.0" layoutY="44.0" />
-      <Label layoutX="314.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Food Distributed:">
+      <TextField fx:id="foodIntakeTF" layoutX="180.0" layoutY="44.0" />
+      <Label layoutX="286.0" layoutY="92.0" style="-fx-font-weight: bold;" text="Food Distributed(in kg):">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="foodDistributedTF" layoutX="429.0" layoutY="44.0" />
-      <Label fx:id="wastedFoodOutputLabel" layoutX="39.0" layoutY="204.0" prefHeight="72.0" prefWidth="511.0" style="-fx-font-weight: bold; -fx-background-color: linear-gradient(to bottom, #FFFFFF, #E2E8F0);;" text="Wasted Food Quantity:" />
+      <TextField fx:id="foodDistributedTF" layoutX="439.0" layoutY="89.0" />
+      <Label fx:id="wastedFoodOutputLabel" layoutX="39.0" layoutY="204.0" prefHeight="72.0" prefWidth="511.0" style="-fx-font-weight: bold; -fx-background-color: linear-gradient(to bottom, #FFFFFF, #E2E8F0);;" />
       <DatePicker fx:id="dateDP" layoutX="93.0" layoutY="89.0" />
       <Label layoutX="48.0" layoutY="92.0" style="-fx-font-weight: bold;" text="Date:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="314.0" layoutY="92.0" style="-fx-font-weight: bold;" text="Batch ID:">
+      <Label layoutX="295.0" layoutY="139.0" style="-fx-font-weight: bold;" text="Growth Stage:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="batchIdTF" layoutX="382.0" layoutY="89.0" />
       <Label layoutX="48.0" layoutY="139.0" style="-fx-font-weight: bold;" text="Tank ID:">
          <font>
             <Font size="13.0" />
@@ -41,6 +41,13 @@
       </Label>
       <TextField fx:id="tankIdTF" layoutX="116.0" layoutY="136.0" />
       <Button layoutX="39.0" layoutY="317.0" mnemonicParsing="false" onAction="#saveUpdateButtonOA" prefHeight="40.0" prefWidth="163.0" style="-fx-font-weight: bold;" text="SAVE UPDATE" textFill="#557bb5" />
-      <Button layoutX="499.0" layoutY="415.0" mnemonicParsing="false" onAction="#backButtonOA" prefHeight="25.0" prefWidth="68.0" text="Back" />
+      <Button layoutX="476.0" layoutY="415.0" mnemonicParsing="false" onAction="#homePageButtonOA" prefHeight="25.0" prefWidth="91.0" text="Home Page" />
+      <Label layoutX="348.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Fish Species:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fishSpeciesCB" layoutX="439.0" layoutY="44.0" prefWidth="150.0" />
+      <ComboBox fx:id="growthStageCB" layoutX="387.0" layoutY="136.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

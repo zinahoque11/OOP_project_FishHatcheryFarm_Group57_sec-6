@@ -8,4 +8,6 @@ module csc305.group57_finalproject_fishhatcheryfarm {
     exports csc305.group57_finalproject_fishhatcheryfarm;
     exports csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
     opens csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851 to javafx.fxml;
+    exports csc305.group57_finalproject_fishhatcheryfarm.Utils;
+    opens csc305.group57_finalproject_fishhatcheryfarm.Utils to javafx.fxml;
 }
