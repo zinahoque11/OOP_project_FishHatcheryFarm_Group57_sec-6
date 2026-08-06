@@ -1,5 +1,7 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.AlertUtil;
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -35,9 +37,25 @@ public class approveSupplyReqsController
 
     @javafx.fxml.FXML
     public void submitButton(ActionEvent actionEvent) {
+        if(approvalCB.getValue() == null){
+            AlertUtil.errorAlert("Please select approval.");
+            return;
+        }
+
+        if(reqQuantityTF.getText().isEmpty() || productNameTF.getText().isEmpty()){
+            AlertUtil.errorAlert("EMPTY FIELD.");
+            return;
+        }
+
+        AlertUtil.infoAlert("Approval Submitted Successfully!");
+
     }
 
+
     @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
+    public void homePageButton(ActionEvent actionEvent) {
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
     }
 }
