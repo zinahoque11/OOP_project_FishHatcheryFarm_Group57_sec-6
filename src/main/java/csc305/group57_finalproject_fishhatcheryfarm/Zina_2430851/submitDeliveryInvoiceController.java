@@ -1,5 +1,7 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.AlertUtil;
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -31,11 +33,32 @@ public class submitDeliveryInvoiceController
         productTypeCB.getItems().addAll("Food","Medication");
     }
 
-    @javafx.fxml.FXML
-    public void backOA(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void submitInvoiceButton(ActionEvent actionEvent) {
+
+        if(productNameTF.getText().isEmpty() || quantityDeliveredTF.getText().isEmpty() ||
+            totalAmountTF.getText().isEmpty() || invoiceIDTF.getText().isEmpty()){
+            AlertUtil.errorAlert("Empty Field!");
+            return;
+        }
+
+        if(deliveryDateDP.getValue() == null || paymentStatusCB.getValue() == null ||
+                productTypeCB.getValue().isEmpty()){
+
+            AlertUtil.errorAlert("Please select empty fields.");
+            return;
+
+        }
+
+        AlertUtil.infoAlert("Invoice Submitted Successfully!");
+    }
+
+    @javafx.fxml.FXML
+    public void homePageButton(ActionEvent actionEvent) {
+
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
     }
 }

@@ -137,7 +137,6 @@ public class updateFoodStockAndQuantityViewController
             e.printStackTrace();
         }
 
-
     }
 
     @javafx.fxml.FXML
