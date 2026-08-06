@@ -75,4 +75,8 @@ public class equipment implements Serializable {
                 ", unitPrice=" + unitPrice +
                 '}';
     }
+
+    public equipment(){
+        //
+    }
 }

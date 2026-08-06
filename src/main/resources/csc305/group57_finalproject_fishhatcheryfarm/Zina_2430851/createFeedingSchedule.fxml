@@ -4,31 +4,36 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="447.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.createFeedingScheduleController">
+<AnchorPane fx:id="mainPane" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.createFeedingScheduleController">
    <children>
       <Label layoutX="43.0" layoutY="35.0" style="-fx-font-weight: bold;" text="Fish Species:" />
       <ComboBox fx:id="fishSpeciesCB" layoutX="121.0" layoutY="31.0" prefWidth="150.0" />
       <DatePicker fx:id="feedDateDP" layoutX="386.0" layoutY="31.0" />
       <Label layoutX="317.0" layoutY="35.0" style="-fx-font-weight: bold;" text="Feed Date:" />
-      <TextField fx:id="dayOfFeedingTF" layoutX="143.0" layoutY="75.0" />
       <Label layoutX="43.0" layoutY="79.0" style="-fx-font-weight: bold;" text="Day of Feeding:" />
-      <TextField fx:id="foodDistributedTF" layoutX="196.0" layoutY="118.0" />
-      <Label layoutX="41.0" layoutY="122.0" style="-fx-font-weight: bold;" text="Food Amount Distributed:" />
-      <TextField fx:id="assignedSectionTF" layoutX="424.0" layoutY="75.0" />
+      <TextField fx:id="foodDistributedTF" layoutX="40.0" layoutY="143.0" />
+      <Label layoutX="41.0" layoutY="122.0" style="-fx-font-weight: bold;" text="Food Amount Distributed (in kg):" />
       <Label layoutX="317.0" layoutY="79.0" style="-fx-font-weight: bold;" text="Assigned Section:" />
       <TextField fx:id="tankIdTF" layoutX="424.0" layoutY="118.0" />
       <Label layoutX="362.0" layoutY="122.0" style="-fx-font-weight: bold;" text="Tank ID:" />
-      <Label fx:id="scheduleLabel" alignment="TOP_LEFT" layoutX="35.0" layoutY="230.0" prefHeight="121.0" prefWidth="514.0" style="-fx-background-color: linear-gradient(to bottom, #FFFFFF, #E2E8F0);; -fx-font-weight: bold;" text="Feeding Schedule For Today:" />
       <Button layoutX="50.0" layoutY="184.0" mnemonicParsing="false" onAction="#createScheduleButtonOA" prefHeight="25.0" prefWidth="185.0" style="-fx-font-weight: bold;" text="Create Schedule" textFill="#4c6fc9" />
-      <Button layoutX="485.0" layoutY="376.0" mnemonicParsing="false" onAction="#backButtonOA" prefHeight="25.0" prefWidth="89.0" text="Back" />
+      <Button layoutX="489.0" layoutY="473.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="89.0" text="Home Page" />
       <Button layoutX="281.0" layoutY="184.0" mnemonicParsing="false" onAction="#showScheduleOA" prefHeight="25.0" prefWidth="185.0" text="Show Schedule" textFill="#3f1bdd">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <ComboBox fx:id="dayOfFeedingCB" layoutX="143.0" layoutY="75.0" prefWidth="150.0" />
+      <ComboBox fx:id="assignedSecCB" layoutX="424.0" layoutY="75.0" prefWidth="150.0" />
+      <TextArea fx:id="showScheduleTA" layoutX="31.0" layoutY="232.0" prefHeight="227.0" prefWidth="547.0" text="Feeding Schedule for the day:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
    </children>
 </AnchorPane>

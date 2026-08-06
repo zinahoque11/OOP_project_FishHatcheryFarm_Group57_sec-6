@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="490.0" prefWidth="613.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordFoodConsumptionController">
+<AnchorPane fx:id="mainPane" prefHeight="490.0" prefWidth="613.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordFoodConsumptionController">
    <children>
       <Label layoutX="41.0" layoutY="43.0" style="-fx-font-weight: bold;" text="Fish Species:">
          <font>
@@ -16,27 +16,26 @@
          </font>
       </Label>
       <ComboBox fx:id="fishSpeciesCB" layoutX="131.0" layoutY="40.0" prefWidth="150.0" />
-      <Label layoutX="300.0" layoutY="43.0" style="-fx-font-weight: bold;" text="Food Quantity Given:">
+      <Label layoutX="289.0" layoutY="43.0" style="-fx-font-weight: bold;" text="Food Quantity Given (in kg):" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="85.0" style="-fx-font-weight: bold;" text="Food Consumed:">
+      <Label layoutX="28.0" layoutY="117.0" style="-fx-font-weight: bold;" text="Food Consumed (in kg):" wrapText="true">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="foodConsumedTF" layoutX="151.0" layoutY="82.0" />
-      <TextField fx:id="foodQuantityTF" layoutX="437.0" layoutY="40.0" />
-      <Label layoutX="314.0" layoutY="85.0" style="-fx-font-weight: bold;" text="Fish Growth Stage:">
+      <TextField fx:id="foodConsumedTF" layoutX="186.0" layoutY="114.0" prefHeight="25.0" prefWidth="128.0" />
+      <TextField fx:id="foodQuantityTF" layoutX="471.0" layoutY="40.0" prefHeight="25.0" prefWidth="128.0" />
+      <Label layoutX="330.0" layoutY="117.0" style="-fx-font-weight: bold;" text="Fish Growth Stage:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <ComboBox fx:id="growthStageCB" layoutX="437.0" layoutY="82.0" prefWidth="150.0" />
-      <TextArea fx:id="additionalinfoTA" layoutX="28.0" layoutY="128.0" prefHeight="200.0" prefWidth="557.0" promptText="Addiotional Information" />
-      <Label fx:id="outputLabel" layoutX="27.0" layoutY="343.0" prefHeight="71.0" prefWidth="564.0" text="Label" />
+      <ComboBox fx:id="growthStageCB" layoutX="449.0" layoutY="114.0" prefWidth="150.0" />
+      <TextArea fx:id="additionalinfoTA" layoutX="28.0" layoutY="170.0" prefHeight="200.0" prefWidth="557.0" promptText="Addiotional Information" />
       <Button layoutX="41.0" layoutY="435.0" mnemonicParsing="false" onAction="#recordConsumptionButtonOA" text="Record Consumption" />
-      <Button layoutX="533.0" layoutY="435.0" mnemonicParsing="false" onAction="#backButtonOA" prefHeight="25.0" prefWidth="57.0" text="Back" />
+      <Button layoutX="498.0" layoutY="435.0" mnemonicParsing="false" onAction="#HomePageOA" prefHeight="25.0" prefWidth="92.0" text="Home Page" />
    </children>
 </AnchorPane>

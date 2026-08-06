@@ -86,4 +86,9 @@ public class supplyFood implements Serializable {
                 ", MfgDate=" + MfgDate +
                 '}';
     }
+
+
+    public supplyFood(){
+        //
+    }
 }

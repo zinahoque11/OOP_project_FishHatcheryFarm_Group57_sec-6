@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.updateFoodIntakeController">
+<AnchorPane fx:id="mainPane" prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordFeedSessionController">
    <children>
       <Label layoutX="32.0" layoutY="54.0" style="-fx-font-weight: bold;" text="Growth Stage:">
          <font>
@@ -30,7 +30,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="394.0" layoutY="135.0" mnemonicParsing="false" onAction="#updateFoodIntakeButtonOA" prefHeight="25.0" prefWidth="157.0" text="Update Food Intake" />
+      <Button layoutX="394.0" layoutY="135.0" mnemonicParsing="false" onAction="#updateFeedSessionButtonOA" prefHeight="25.0" prefWidth="157.0" text="Update Feed Session" />
       <TableView fx:id="foodIntakeTableView" layoutX="32.0" layoutY="186.0" prefHeight="200.0" prefWidth="550.0" style="-fx-background-color: white;">
         <columns>
           <TableColumn fx:id="fishSpeciesColumn" prefWidth="142.00003051757812" text="Fish Species" />
@@ -39,7 +39,7 @@
             <TableColumn fx:id="feedingSessionsTodayColumn" prefWidth="162.66668701171875" text="Feeding Session Today" />
         </columns>
       </TableView>
-      <Button layoutX="461.0" layoutY="427.0" mnemonicParsing="false" onAction="#backOA" prefHeight="25.0" prefWidth="117.0" text="Back" />
+      <Button layoutX="461.0" layoutY="427.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="117.0" text="Home Page" />
       <TextField fx:id="healthStatusTF" layoutX="137.0" layoutY="135.0" />
       <Label layoutX="40.0" layoutY="138.0" style="-fx-font-weight: bold;" text="Health Status:">
          <font>
@@ -52,5 +52,6 @@
             <Font size="13.0" />
          </font>
       </Label>
+      <Button layoutX="32.0" layoutY="427.0" mnemonicParsing="false" onAction="#showUpdateButton" prefHeight="25.0" prefWidth="117.0" text="Show Update" />
    </children>
 </AnchorPane>

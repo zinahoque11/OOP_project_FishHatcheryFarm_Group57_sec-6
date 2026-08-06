@@ -5,24 +5,21 @@ import java.time.LocalDate;
 
 public class foodInventory implements Serializable {
 
-    private String foodType;
+    private String foodType,stockStatus,fishSpecies ;
     private float foodQuantity;
-    private String stockStatus;
-    private LocalDate expiryDate;
-    private LocalDate productionDate;
-    private float expiredFoodQuantity;
-    private float wastedFoodQuantity;
-    private String fishSpecies;
+    private LocalDate expiryDate,productionDate;
+    private float expiredFoodQuantity,wastedFoodQuantity;
 
-    public foodInventory(String foodType, float foodQuantity, String stockStatus, LocalDate expiryDate, LocalDate productionDate, float expiredFoodQuantity, float wastedFoodQuantity, String fishSpecies) {
+
+    public foodInventory(String foodType, String stockStatus, String fishSpecies, float foodQuantity, LocalDate expiryDate, LocalDate productionDate, float expiredFoodQuantity, float wastedFoodQuantity) {
         this.foodType = foodType;
-        this.foodQuantity = foodQuantity;
         this.stockStatus = stockStatus;
+        this.fishSpecies = fishSpecies;
+        this.foodQuantity = foodQuantity;
         this.expiryDate = expiryDate;
         this.productionDate = productionDate;
         this.expiredFoodQuantity = expiredFoodQuantity;
         this.wastedFoodQuantity = wastedFoodQuantity;
-        this.fishSpecies = fishSpecies;
     }
 
     public String getFoodType() {
@@ -33,20 +30,28 @@ public class foodInventory implements Serializable {
         this.foodType = foodType;
     }
 
-    public float getFoodQuantity() {
-        return foodQuantity;
-    }
-
-    public void setFoodQuantity(float foodQuantity) {
-        this.foodQuantity = foodQuantity;
-    }
-
     public String getStockStatus() {
         return stockStatus;
     }
 
     public void setStockStatus(String stockStatus) {
         this.stockStatus = stockStatus;
+    }
+
+    public String getFishSpecies() {
+        return fishSpecies;
+    }
+
+    public void setFishSpecies(String fishSpecies) {
+        this.fishSpecies = fishSpecies;
+    }
+
+    public float getFoodQuantity() {
+        return foodQuantity;
+    }
+
+    public void setFoodQuantity(float foodQuantity) {
+        this.foodQuantity = foodQuantity;
     }
 
     public LocalDate getExpiryDate() {
@@ -81,25 +86,21 @@ public class foodInventory implements Serializable {
         this.wastedFoodQuantity = wastedFoodQuantity;
     }
 
-    public String getFishSpecies() {
-        return fishSpecies;
-    }
-
-    public void setFishSpecies(String fishSpecies) {
-        this.fishSpecies = fishSpecies;
-    }
-
     @Override
     public String toString() {
         return "foodInventory{" +
                 "foodType='" + foodType + '\'' +
-                ", foodQuantity=" + foodQuantity +
                 ", stockStatus='" + stockStatus + '\'' +
+                ", fishSpecies='" + fishSpecies + '\'' +
+                ", foodQuantity=" + foodQuantity +
                 ", expiryDate=" + expiryDate +
                 ", productionDate=" + productionDate +
                 ", expiredFoodQuantity=" + expiredFoodQuantity +
                 ", wastedFoodQuantity=" + wastedFoodQuantity +
-                ", fishSpecies='" + fishSpecies + '\'' +
                 '}';
+    }
+
+    public foodInventory(){
+
     }
 }

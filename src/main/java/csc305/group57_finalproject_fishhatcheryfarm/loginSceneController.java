@@ -49,9 +49,9 @@ public class loginSceneController
             return;
         }
 
-        if(userId.length() < 7){
+        if(userId.length() < 5){
 
-            AlertUtil.errorAlert("User ID must have 7 characters!");
+            AlertUtil.errorAlert("User ID must have 5 characters!");
             return;
         }
 

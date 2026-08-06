@@ -1,5 +1,7 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.AppendableObjectOutputStream;
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -8,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.*;
 import java.time.LocalDate;
 
 public class supplyMedController
@@ -41,15 +44,89 @@ public class supplyMedController
         expiryDateColumn.setCellValueFactory(new PropertyValueFactory<>("expiryDate"));
     }
 
-    @javafx.fxml.FXML
-    public void backButtonOA(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void addMedSuppliesButton(ActionEvent actionEvent) {
+
+        Medication m =new Medication();
+        m.setMedType(medTypeTF.getText());
+        m.setDeliveryDate(deliveryDateDP.getValue());
+        m.setQuantity(Float.parseFloat(quantitySuppliedTF.getText()));
+        m.setExpiryDate(expiryDateDP.getValue());
+
+
+        File f = new File("Med Supplies.bin");
+        FileOutputStream fos;
+        ObjectOutputStream oos;
+
+        try{
+
+            if (f.exists()){
+                fos = new FileOutputStream(f,true);
+                oos = new AppendableObjectOutputStream(fos);
+            }
+
+            else{
+
+                fos = new FileOutputStream(f);
+                oos = new ObjectOutputStream(fos);
+
+            }
+
+            oos.writeObject(m);
+            oos.close();
+            fos.close();
+
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
     @javafx.fxml.FXML
     public void viewListButton(ActionEvent actionEvent) {
+        File f = new File("Med Supplies.bin");
+
+        try{
+
+            FileInputStream fis = new FileInputStream(f);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+
+            medSuppliesTV.getItems().clear();
+
+
+            while(true){
+
+                try{
+                    Medication med = (Medication) ois.readObject();
+                    medSuppliesTV.getItems().add(med);
+                }
+
+
+                catch(EOFException e){
+                    break;
+
+                }
+
+            }
+
+            ois.close();
+            fis.close();
+
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void homePageOA(ActionEvent actionEvent) {
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
     }
 }

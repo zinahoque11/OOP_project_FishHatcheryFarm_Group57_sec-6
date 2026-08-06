@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainPane" prefHeight="521.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.FishFoodManagerDashboardController">
+<AnchorPane fx:id="mainPane" prefHeight="548.0" prefWidth="585.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.FishFoodManagerDashboardController">
    <children>
       <Text fill="#5470cc" layoutX="104.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish Food Manager Dashboard">
          <font>
@@ -14,30 +14,30 @@
          </font>
       </Text>
       <Line endX="374.33331298828125" endY="7.62939453125E-6" layoutX="157.0" layoutY="79.0" startX="-100.0" stroke="#2413b7" />
-      <Button layoutX="38.0" layoutY="123.0" mnemonicParsing="false" onAction="#updateFoodStockAndQuantity" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4;" text="Update Food Stock and Quantity" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="38.0" layoutY="123.0" mnemonicParsing="false" onAction="#updateFoodStockAndQuantity" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4;" text="Update Food Stock and Quantity" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="38.0" layoutY="261.0" mnemonicParsing="false" onAction="#updateFoodIntake" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4;" text="Update Food Intake" textFill="WHITE">
+      <Button layoutX="38.0" layoutY="261.0" mnemonicParsing="false" onAction="#updateFoodIntake" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4;" text="Record Feeding Sessions and Health Status" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="38.0" layoutY="306.0" mnemonicParsing="false" onAction="#recordWastedFood" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Record Wasted Food" textFill="WHITE" />
-      <Button layoutX="42.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitRestockReq" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Submit Restock Request" textFill="WHITE" />
-      <Button layoutX="38.0" layoutY="170.0" mnemonicParsing="false" onAction="#removeExpiredFood" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4;" text="Record expired Food Quantity" textFill="WHITE">
+      <Button layoutX="38.0" layoutY="306.0" mnemonicParsing="false" onAction="#recordWastedFood" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Record Wasted Food" textFill="WHITE" />
+      <Button layoutX="42.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitRestockReq" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Submit Restock Request" textFill="WHITE" />
+      <Button layoutX="38.0" layoutY="170.0" mnemonicParsing="false" onAction="#removeExpiredFood" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4;" text="Record expired Food Quantity" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="39.0" layoutY="215.0" mnemonicParsing="false" onAction="#recordFoodConsumption" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Record Food Consumption" textFill="WHITE">
+      <Button layoutX="39.0" layoutY="215.0" mnemonicParsing="false" onAction="#recordFoodConsumption" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Record Food Consumption" textFill="WHITE">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="39.0" layoutY="353.0" mnemonicParsing="false" onAction="#createFeedSchedule" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Create Feeding Schedule" textFill="WHITE" />
-      <Button layoutX="39.0" layoutY="443.0" mnemonicParsing="false" onAction="#assignMed" prefHeight="25.0" prefWidth="504.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Assign Medication" textFill="WHITE" />
-      <Button layoutX="256.0" layoutY="481.0" mnemonicParsing="false" onAction="#homePageOA" text="HomePage" />
+      <Button layoutX="39.0" layoutY="353.0" mnemonicParsing="false" onAction="#createFeedSchedule" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Create Feeding Schedule" textFill="WHITE" />
+      <Button layoutX="39.0" layoutY="443.0" mnemonicParsing="false" onAction="#assignMed" prefHeight="25.0" prefWidth="519.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Assign Medication" textFill="WHITE" />
+      <Button layoutX="257.0" layoutY="495.0" mnemonicParsing="false" onAction="#homePageOA" text="HomePage" />
    </children>
 </AnchorPane>

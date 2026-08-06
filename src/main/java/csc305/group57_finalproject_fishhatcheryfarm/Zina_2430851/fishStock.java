@@ -3,6 +3,7 @@ package csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851;
 import java.io.Serializable;
 
 public class fishStock implements Serializable {
+
     private String fishSpecies;
     private String batchID;
     private String healthStatus;
@@ -77,5 +78,10 @@ public class fishStock implements Serializable {
                 ", growthStage='" + growthStage + '\'' +
                 ", feedSessionsPerDay=" + feedSessionsPerDay +
                 '}';
+    }
+
+
+    public fishStock(){
+
     }
 }
