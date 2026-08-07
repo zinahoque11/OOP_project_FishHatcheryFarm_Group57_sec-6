@@ -11,25 +11,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="432.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="432.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.BudgetPlanningController">
    <children>
       <Label layoutX="46.0" layoutY="23.0" text="Project name:" />
-      <TextField layoutX="150.0" layoutY="19.0" />
+      <TextField fx:id="projectnametext" layoutX="150.0" layoutY="19.0" />
       <Label layoutX="46.0" layoutY="67.0" text="Budget category:" />
-      <ComboBox layoutX="150.0" layoutY="63.0" prefWidth="150.0" />
+      <ComboBox fx:id="budgetcategorycombo" layoutX="150.0" layoutY="63.0" prefWidth="150.0" />
       <Label layoutX="328.0" layoutY="23.0" text="Budget period:" />
-      <DatePicker layoutX="411.0" layoutY="19.0" />
+      <DatePicker fx:id="budgetperiodtext" layoutX="411.0" layoutY="19.0" />
       <Label layoutX="46.0" layoutY="123.0" text="Remarks:" />
-      <TextArea layoutX="107.0" layoutY="104.0" prefHeight="57.0" prefWidth="259.0" />
-      <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" text="Update" />
-      <TableView layoutX="19.0" layoutY="186.0" prefHeight="200.0" prefWidth="607.0">
+      <TextArea fx:id="remarkstext" layoutX="107.0" layoutY="104.0" prefHeight="57.0" prefWidth="259.0" />
+      <Button layoutX="426.0" layoutY="127.0" mnemonicParsing="false" onAction="#updateonact" text="Update" />
+      <TableView fx:id="budgetplantab" layoutX="19.0" layoutY="186.0" prefHeight="200.0" prefWidth="607.0">
         <columns>
-          <TableColumn prefWidth="83.99996948242188" text="Department" />
-          <TableColumn prefWidth="103.33334350585938" text="Category" />
-            <TableColumn prefWidth="103.33334350585938" text="Total amount" />
-            <TableColumn prefWidth="103.33334350585938" text="Spent amount" />
-            <TableColumn prefWidth="103.33334350585938" text="Variance" />
-            <TableColumn prefWidth="104.66668701171875" text="Status" />
+          <TableColumn fx:id="departmenttabcol" prefWidth="83.99996948242188" text="Department" />
+          <TableColumn fx:id="categorytabcol" prefWidth="103.33334350585938" text="Category" />
+            <TableColumn fx:id="totalamounttabcol" prefWidth="103.33334350585938" text="Total amount" />
+            <TableColumn fx:id="spentamounttabcol" prefWidth="103.33334350585938" text="Spent amount" />
+            <TableColumn fx:id="variancetabcol" prefWidth="103.33334350585938" text="Variance" />
+            <TableColumn fx:id="statustabcol" prefWidth="104.66668701171875" text="Status" />
         </columns>
       </TableView>
    </children>

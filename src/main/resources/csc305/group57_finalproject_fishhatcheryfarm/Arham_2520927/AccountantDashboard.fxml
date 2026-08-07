@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="521.0" prefWidth="600.0" style="-fx-background-color: GReen;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="521.0" prefWidth="600.0" style="-fx-background-color: GReen;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.AccountantDashboardController">
    <children>
       <Text layoutX="163.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountant Dashboard">
          <font>

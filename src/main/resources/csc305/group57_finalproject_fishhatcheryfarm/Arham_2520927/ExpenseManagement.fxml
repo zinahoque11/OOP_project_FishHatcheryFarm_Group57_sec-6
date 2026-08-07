@@ -9,24 +9,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="431.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="431.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ExpenseManagementController">
    <children>
       <Label layoutX="333.0" layoutY="69.0" text="Date:" />
       <Label layoutX="333.0" layoutY="27.0" text="Amount(BDT):" />
       <Label layoutX="43.0" layoutY="69.0" text="Expense type:" />
-      <ComboBox layoutX="132.0" layoutY="69.0" prefWidth="150.0" />
-      <DatePicker layoutX="423.0" layoutY="65.0" prefHeight="25.0" prefWidth="149.0" />
-      <TextField layoutX="423.0" layoutY="23.0" />
+      <ComboBox fx:id="expensecombo" layoutX="132.0" layoutY="69.0" prefWidth="150.0" />
+      <DatePicker fx:id="datedatepicker" layoutX="423.0" layoutY="65.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="amounttext" layoutX="423.0" layoutY="23.0" />
       <Label layoutX="43.0" layoutY="27.0" text="Expense Title:" />
-      <TextField layoutX="132.0" layoutY="23.0" />
-      <Button layoutX="280.0" layoutY="131.0" mnemonicParsing="false" text="Save" />
-      <TableView layoutX="34.0" layoutY="182.0" prefHeight="200.0" prefWidth="573.0">
+      <TextField fx:id="expensetitletext" layoutX="132.0" layoutY="23.0" />
+      <Button layoutX="280.0" layoutY="131.0" mnemonicParsing="false" onAction="#savebutton" text="Save" />
+      <TableView fx:id="expensemanagementtab" layoutX="34.0" layoutY="182.0" prefHeight="200.0" prefWidth="573.0">
         <columns>
-          <TableColumn prefWidth="105.33331298828125" text="Date" />
-          <TableColumn prefWidth="115.99996948242188" text="Expense Title" />
-            <TableColumn prefWidth="116.00001525878906" text="Amount" />
-            <TableColumn prefWidth="118.6666259765625" text="Type" />
-            <TableColumn prefWidth="115.33330281575525" text="Status" />
+          <TableColumn fx:id="datetabcol" prefWidth="105.33331298828125" text="Date" />
+          <TableColumn fx:id="expensetitletabcol" prefWidth="115.99996948242188" text="Expense Title" />
+            <TableColumn fx:id="amounttabcol" prefWidth="116.00001525878906" text="Amount" />
+            <TableColumn fx:id="typetabcol" prefWidth="118.6666259765625" text="Type" />
+            <TableColumn fx:id="statustabcol" prefWidth="115.33330281575525" text="Status" />
         </columns>
       </TableView>
    </children>
