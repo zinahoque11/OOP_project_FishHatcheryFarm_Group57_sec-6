@@ -16,11 +16,7 @@ import java.io.*;
 public class updateFoodStockAndQuantityViewController
 {
     @javafx.fxml.FXML
-    private ComboBox<String> fishSpeciesCB;
-    @javafx.fxml.FXML
     private TableView<foodInventory> StockAndQuantityTableView;
-    @javafx.fxml.FXML
-    private TableColumn<foodInventory, String> fishSpeciesColumn;
     @javafx.fxml.FXML
     private TableColumn<foodInventory, String> stockStatusColumn;
     @javafx.fxml.FXML
@@ -29,27 +25,29 @@ public class updateFoodStockAndQuantityViewController
     private ComboBox<String> stockStatusCB;
     @javafx.fxml.FXML
     private TableColumn<foodInventory, String> foodQuantityColumn;
-
-
     @javafx.fxml.FXML
     private AnchorPane mainPane;
+    @javafx.fxml.FXML
+    private TextField foodTypeTF;
+    @javafx.fxml.FXML
+    private TableColumn<foodInventory, String> foodTypeColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
 
-        fishSpeciesCB.getItems().addAll("Mackerel","Catfish","Snapper","Tilapia","Salmon","Tuna","CodFish","Sardines");
         stockStatusCB.getItems().addAll("In-Stock","Out of Stock","Limited");
-        fishSpeciesColumn.setCellValueFactory(new PropertyValueFactory<>("fishSpecies"));
+        foodTypeColumn.setCellValueFactory(new PropertyValueFactory<>("foodType"));
         foodQuantityColumn.setCellValueFactory(new PropertyValueFactory<>("foodQuantity"));
         stockStatusColumn.setCellValueFactory(new PropertyValueFactory<>("stockStatus"));
+
     }
 
 
     @javafx.fxml.FXML
     public void saveUpdatesOA(ActionEvent actionEvent) {
 
-        if(fishSpeciesCB.getValue() == null){
-            AlertUtil.errorAlert("Please select a fish species.");
+        if(foodTypeTF.getText().isEmpty()){
+            AlertUtil.errorAlert("Please enter Food Type.");
             return;
         }
 
@@ -65,7 +63,7 @@ public class updateFoodStockAndQuantityViewController
 
         foodInventory foodinv = new foodInventory();
 
-        foodinv.setFishSpecies(fishSpeciesCB.getValue());
+        foodinv.setFoodType(foodTypeTF.getText());
         foodinv.setFoodQuantity(Float.parseFloat(foodQuantityTF.getText()));
         foodinv.setStockStatus(stockStatusCB.getValue());
 
