@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <Label layoutX="33.0" layoutY="33.0" text="Search items:" />
+      <Label layoutX="307.0" layoutY="33.0" prefHeight="17.0" prefWidth="58.0" text="Category:" />
+      <Label layoutX="33.0" layoutY="89.0" prefHeight="17.0" prefWidth="85.0" text="Last updated:" />
+      <ComboBox layoutX="374.0" layoutY="29.0" prefWidth="150.0" />
+      <DatePicker layoutX="118.0" layoutY="85.0" />
+      <TextField layoutX="115.0" layoutY="29.0" />
+      <Button layoutX="472.0" layoutY="188.0" mnemonicParsing="false" text="Update" />
+      <TableView layoutX="33.0" layoutY="264.0" prefHeight="200.0" prefWidth="547.0">
+        <columns>
+          <TableColumn prefWidth="98.66668701171875" text="Category" />
+          <TableColumn prefWidth="111.33328247070312" text="Item name" />
+            <TableColumn prefWidth="118.66668701171875" text="Quantity" />
+            <TableColumn prefWidth="112.0" text="Status" />
+            <TableColumn prefWidth="112.0" text="Last updated" />
+        </columns>
+      </TableView>
+      <Label layoutX="33.0" layoutY="134.0" prefHeight="17.0" prefWidth="85.0" text="Restock notes:" />
+      <TextArea layoutX="125.0" layoutY="134.0" prefHeight="107.0" prefWidth="307.0" />
+   </children>
+</AnchorPane>

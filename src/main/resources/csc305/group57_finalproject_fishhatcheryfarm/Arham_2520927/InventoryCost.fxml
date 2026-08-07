@@ -6,27 +6,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
    <children>
-      <Label layoutX="33.0" layoutY="33.0" text="Item Category:" />
-      <Label layoutX="307.0" layoutY="80.0" prefHeight="17.0" prefWidth="65.0" text="From date:" />
-      <Label layoutX="307.0" layoutY="33.0" prefHeight="17.0" prefWidth="65.0" text="Item name:" />
-      <Label layoutX="33.0" layoutY="89.0" prefHeight="17.0" prefWidth="50.0" text="To date:" />
-      <ComboBox layoutX="115.0" layoutY="29.0" prefWidth="150.0" />
-      <DatePicker layoutX="84.0" layoutY="85.0" />
-      <DatePicker layoutX="388.0" layoutY="76.0" />
-      <TextField layoutX="401.0" layoutY="29.0" />
-      <Button layoutX="423.0" layoutY="118.0" mnemonicParsing="false" text="Search" />
-      <TableView layoutX="33.0" layoutY="172.0" prefHeight="200.0" prefWidth="547.0">
+      <Label layoutX="47.0" layoutY="33.0" text="Name of the item:" />
+      <TextField layoutX="159.0" layoutY="29.0" />
+      <Label layoutX="47.0" layoutY="71.0" text="Category:" />
+      <ComboBox layoutX="159.0" layoutY="67.0" prefWidth="150.0" />
+      <Label layoutX="332.0" layoutY="33.0" text="Cost period:" />
+      <DatePicker layoutX="411.0" layoutY="29.0" />
+      <Label layoutX="50.0" layoutY="121.0" text="Remarks:" />
+      <TextArea layoutX="120.0" layoutY="107.0" prefHeight="62.0" prefWidth="227.0" />
+      <Button layoutX="411.0" layoutY="129.0" mnemonicParsing="false" text="Update" />
+      <TableView layoutX="20.0" layoutY="193.0" prefHeight="200.0" prefWidth="568.0">
         <columns>
-          <TableColumn prefWidth="118.0" text="Category" />
-          <TableColumn prefWidth="129.33334350585938" text="Item name" />
-            <TableColumn prefWidth="133.33331298828125" text="From date" />
-            <TableColumn prefWidth="166.66668701171875" text="To date" />
+          <TableColumn prefWidth="100.66665649414062" text="Item name" />
+          <TableColumn prefWidth="111.33331298828125" text="Category" />
+            <TableColumn text="Quantity" />
+            <TableColumn prefWidth="82.0" text="Unit price" />
+            <TableColumn prefWidth="89.33331298828125" text="total price" />
+            <TableColumn prefWidth="104.66668701171875" text="Status" />
         </columns>
       </TableView>
    </children>
