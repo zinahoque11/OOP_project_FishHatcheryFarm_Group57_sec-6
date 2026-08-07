@@ -1,34 +1,34 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
-public class ExpenseManagementController
+public class InventoryStatusController
 {
     @javafx.fxml.FXML
-    private TextField expensetitletext;
+    private TableColumn quantitytabcol;
     @javafx.fxml.FXML
-    private TextField amounttext;
+    private TableColumn categorytabcol;
     @javafx.fxml.FXML
-    private TableColumn expensetitletabcol;
+    private TableColumn lastupdatedtabcol;
     @javafx.fxml.FXML
-    private DatePicker datedatepicker;
+    private TextField searchitemstext;
     @javafx.fxml.FXML
-    private TableColumn datetabcol;
+    private ComboBox categorycombo;
     @javafx.fxml.FXML
-    private TableColumn amounttabcol;
-    @javafx.fxml.FXML
-    private TableColumn typetabcol;
+    private DatePicker lastupdatedatepicker;
     @javafx.fxml.FXML
     private TableColumn statustabcol;
     @javafx.fxml.FXML
-    private TableView expensemanagementtab;
+    private TableView inventorystatustable;
     @javafx.fxml.FXML
-    private ComboBox expensecombo;
+    private TextArea remarkstext;
+    @javafx.fxml.FXML
+    private TableColumn itemnametabcol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void savebutton(ActionEvent actionEvent) {
+    public void updatebutton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

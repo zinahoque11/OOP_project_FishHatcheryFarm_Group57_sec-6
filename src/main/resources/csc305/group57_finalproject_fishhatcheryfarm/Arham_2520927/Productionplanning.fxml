@@ -8,23 +8,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="436.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="436.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ProductionplanningController">
    <children>
       <Label layoutX="47.0" layoutY="31.0" text="Target Fish Quantity:" />
       <Label layoutX="47.0" layoutY="70.0" text="Fish type:" />
       <Label layoutX="90.0" layoutY="164.0" />
       <Label layoutX="47.0" layoutY="104.0" text="Deadline:" />
-      <TextField layoutX="172.0" layoutY="27.0" />
-      <TextField layoutX="172.0" layoutY="66.0" />
-      <DatePicker layoutX="172.0" layoutY="100.0" prefHeight="17.0" prefWidth="149.0" />
-      <TableView layoutX="15.0" layoutY="154.0" prefHeight="200.0" prefWidth="570.0">
+      <TextField fx:id="targetfishquantitytext" layoutX="172.0" layoutY="27.0" />
+      <TextField fx:id="fishtypetext" layoutX="172.0" layoutY="66.0" />
+      <DatePicker fx:id="deadlinedatepicker" layoutX="172.0" layoutY="100.0" prefHeight="17.0" prefWidth="149.0" />
+      <TableView fx:id="productiontplanningtable" layoutX="15.0" layoutY="154.0" prefHeight="200.0" prefWidth="570.0">
         <columns>
-          <TableColumn prefWidth="130.0" text="Target fish quantity" />
-            <TableColumn prefWidth="170.66665649414062" text="Fish Type" />
-            <TableColumn prefWidth="138.0" text="Deadline" />
-            <TableColumn prefWidth="130.0" text="Status" />
+          <TableColumn fx:id="targetfishquantitytabcol" prefWidth="130.0" text="Target fish quantity" />
+            <TableColumn fx:id="fishtypetabcol" prefWidth="170.66665649414062" text="Fish Type" />
+            <TableColumn fx:id="deadlinetabcol" prefWidth="138.0" text="Deadline" />
+            <TableColumn fx:id="statustabcol" prefWidth="130.0" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="398.0" layoutY="100.0" mnemonicParsing="false" text="Update" />
+      <Button layoutX="398.0" layoutY="100.0" mnemonicParsing="false" onAction="#updatebutton" text="Update" />
+      <Button layoutX="475.0" layoutY="385.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
    </children>
 </AnchorPane>

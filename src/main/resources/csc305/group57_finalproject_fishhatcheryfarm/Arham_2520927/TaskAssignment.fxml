@@ -9,24 +9,25 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="534.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="534.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.TaskAssignmentController">
    <children>
       <Label layoutX="23.0" layoutY="29.0" prefHeight="17.0" prefWidth="87.0" text="Select worker:" />
-      <ComboBox layoutX="127.0" layoutY="25.0" prefHeight="25.0" prefWidth="251.0" />
+      <ComboBox fx:id="selectworkercombo" layoutX="127.0" layoutY="25.0" prefHeight="25.0" prefWidth="251.0" />
       <Label layoutX="23.0" layoutY="71.0" prefHeight="17.0" prefWidth="73.0" text="Select  Task:" />
       <Label layoutX="23.0" layoutY="112.0" prefHeight="17.0" prefWidth="60.0" text="Due date:" />
-      <ComboBox layoutX="127.0" layoutY="67.0" prefHeight="25.0" prefWidth="251.0" />
-      <Button layoutX="461.0" layoutY="184.0" mnemonicParsing="false" text="Assign" />
-      <TableView layoutX="40.0" layoutY="267.0" prefHeight="200.0" prefWidth="519.0">
+      <ComboBox fx:id="selecttaskcombo" layoutX="127.0" layoutY="67.0" prefHeight="25.0" prefWidth="251.0" />
+      <Button layoutX="461.0" layoutY="184.0" mnemonicParsing="false" onAction="#assignbutton" text="Assign" />
+      <TableView fx:id="taskassignmenttable" layoutX="40.0" layoutY="267.0" prefHeight="200.0" prefWidth="519.0">
         <columns>
-          <TableColumn prefWidth="127.33331298828125" text="Worker" />
-          <TableColumn prefWidth="116.66665649414062" text="Task" />
-            <TableColumn prefWidth="140.0" text="Details" />
-            <TableColumn prefWidth="132.0" text="Status" />
+          <TableColumn fx:id="workertabcol" prefWidth="127.33331298828125" text="Worker" />
+          <TableColumn fx:id="tasktabcol" prefWidth="116.66665649414062" text="Task" />
+            <TableColumn fx:id="detailstabcol" prefWidth="140.0" text="Details" />
+            <TableColumn fx:id="statustabcol" prefWidth="132.0" text="Status" />
         </columns>
       </TableView>
-      <DatePicker layoutX="120.0" layoutY="108.0" prefHeight="25.0" prefWidth="191.0" />
+      <DatePicker fx:id="duedatedatepicker" layoutX="120.0" layoutY="108.0" prefHeight="25.0" prefWidth="191.0" />
       <Label layoutX="23.0" layoutY="155.0" prefHeight="17.0" prefWidth="73.0" text="Task details:" />
-      <TextArea layoutX="116.0" layoutY="143.0" prefHeight="107.0" prefWidth="200.0" />
+      <TextArea fx:id="taskdetailstext" layoutX="116.0" layoutY="143.0" prefHeight="107.0" prefWidth="200.0" />
+      <Button layoutX="486.0" layoutY="485.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
    </children>
 </AnchorPane>

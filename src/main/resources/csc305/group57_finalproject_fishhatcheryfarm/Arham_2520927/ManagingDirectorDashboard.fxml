@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="436.0" prefWidth="600.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="436.0" prefWidth="600.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ManagingDirectorDashboardController">
    <children>
       <Text layoutX="110.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Managing Director's Dashboard" wrappingWidth="378.8033142089844">
          <font>
@@ -14,32 +14,32 @@
          </font>
       </Text>
       <Line endX="280.33331298828125" endY="-7.62939453125E-6" layoutX="194.0" layoutY="60.0" startX="-100.0" />
-      <Button layoutX="93.0" layoutY="91.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="411.0" text="Monitor Farm">
+      <Button layoutX="93.0" layoutY="91.0" mnemonicParsing="false" onAction="#monitorfarmbutton" prefHeight="27.0" prefWidth="411.0" text="Monitor Farm">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="93.0" layoutY="136.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="411.0" text="Financial Reports">
+      <Button layoutX="93.0" layoutY="136.0" mnemonicParsing="false" onAction="#financialreportsbutton" prefHeight="29.0" prefWidth="411.0" text="Financial Reports">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="94.0" layoutY="184.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="411.0" text="Production Planning">
+      <Button layoutX="94.0" layoutY="184.0" mnemonicParsing="false" onAction="#productionplanning" prefHeight="19.0" prefWidth="411.0" text="Production Planning">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="94.0" layoutY="233.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="411.0" text="Task Assignment">
+      <Button layoutX="94.0" layoutY="233.0" mnemonicParsing="false" onAction="#taskassignmentbutton" prefHeight="23.0" prefWidth="411.0" text="Task Assignment">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="94.0" layoutY="276.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="411.0" text="Future planning">
+      <Button layoutX="94.0" layoutY="276.0" mnemonicParsing="false" onAction="#futureplanningbutton" prefHeight="21.0" prefWidth="411.0" text="Future planning">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="94.0" layoutY="327.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="411.0" text="Inventory Status ">
+      <Button layoutX="94.0" layoutY="327.0" mnemonicParsing="false" onAction="#inventorystatusbutton" prefHeight="22.0" prefWidth="411.0" text="Inventory Status ">
          <font>
             <Font size="14.0" />
          </font>

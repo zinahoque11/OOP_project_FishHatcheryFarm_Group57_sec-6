@@ -8,22 +8,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="526.0" prefWidth="673.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourproject.controller.MD_MonitorFarmController">
+<AnchorPane prefHeight="526.0" prefWidth="673.0" style="-fx-background-color: Green;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.MD_MonitorFarmController">
    <children>
       <Label layoutX="48.0" layoutY="286.0" style="-fx-background-color: yellow;" text="Tank ID:" />
-      <TextField layoutX="119.0" layoutY="282.0" />
-      <Button layoutX="70.0" layoutY="466.0" mnemonicParsing="false" text="Notify" />
-      <TableView layoutX="38.0" layoutY="37.0" prefHeight="200.0" prefWidth="598.0">
+      <TextField fx:id="tankIDtext" layoutX="119.0" layoutY="282.0" />
+      <Button layoutX="70.0" layoutY="466.0" mnemonicParsing="false" onAction="#notifybutton" text="Notify" />
+      <TableView fx:id="monitorfarmtable" layoutX="38.0" layoutY="37.0" prefHeight="200.0" prefWidth="598.0">
         <columns>
-          <TableColumn prefWidth="124.66666030883789" text="Tank ID" />
-            <TableColumn prefWidth="116.00001525878906" text="Temperature" />
-            <TableColumn prefWidth="103.99993896484375" text="Oxygen" />
-            <TableColumn prefWidth="134.00009155273438" text="Fish growth rate" />
-            <TableColumn prefWidth="121.33331298828125" text="Tank condition" />
+          <TableColumn fx:id="TankIDtabcol" prefWidth="124.66666030883789" text="Tank ID" />
+            <TableColumn fx:id="temperaturetabcol" prefWidth="116.00001525878906" text="Temperature" />
+            <TableColumn fx:id="oxygentabcol" prefWidth="103.99993896484375" text="Oxygen" />
+            <TableColumn fx:id="fishgrowthratetabcol" prefWidth="134.00009155273438" text="Fish growth rate" />
+            <TableColumn fx:id="tankconditiontabcol" prefWidth="121.33331298828125" text="Tank condition" />
         </columns>
       </TableView>
-      <Button layoutX="551.0" layoutY="479.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="551.0" layoutY="479.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
       <Label layoutX="45.0" layoutY="362.0" style="-fx-background-color: yellow;" text="Problem:" />
-      <TextArea layoutX="119.0" layoutY="324.0" prefHeight="109.0" prefWidth="200.0" />
+      <TextArea fx:id="problemtext" layoutX="119.0" layoutY="324.0" prefHeight="109.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

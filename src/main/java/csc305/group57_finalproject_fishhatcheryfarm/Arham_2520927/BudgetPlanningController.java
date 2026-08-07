@@ -35,4 +35,8 @@ public class BudgetPlanningController
     @javafx.fxml.FXML
     public void updateonact(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void backbutton(ActionEvent actionEvent) {
+    }
 }

@@ -1,34 +1,32 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
-public class ExpenseManagementController
+public class SalaryManagementController
 {
     @javafx.fxml.FXML
-    private TextField expensetitletext;
+    private DatePicker salarymonthdatepicker;
     @javafx.fxml.FXML
-    private TextField amounttext;
+    private TableView salarymanagementtable;
     @javafx.fxml.FXML
-    private TableColumn expensetitletabcol;
+    private TableColumn IDtabcol;
     @javafx.fxml.FXML
-    private DatePicker datedatepicker;
+    private ComboBox departmentcombo;
     @javafx.fxml.FXML
-    private TableColumn datetabcol;
+    private TableColumn netsalarytabcol;
     @javafx.fxml.FXML
-    private TableColumn amounttabcol;
-    @javafx.fxml.FXML
-    private TableColumn typetabcol;
+    private TextField employeeidtext;
     @javafx.fxml.FXML
     private TableColumn statustabcol;
     @javafx.fxml.FXML
-    private TableView expensemanagementtab;
+    private TextArea remarkstext;
     @javafx.fxml.FXML
-    private ComboBox expensecombo;
+    private TableColumn nametabcol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void savebutton(ActionEvent actionEvent) {
+    public void updatesalarybutton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

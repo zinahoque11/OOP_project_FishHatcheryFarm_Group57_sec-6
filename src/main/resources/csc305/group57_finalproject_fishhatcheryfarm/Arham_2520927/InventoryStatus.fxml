@@ -10,25 +10,26 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="516.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.InventoryStatusController">
    <children>
       <Label layoutX="33.0" layoutY="33.0" text="Search items:" />
       <Label layoutX="307.0" layoutY="33.0" prefHeight="17.0" prefWidth="58.0" text="Category:" />
       <Label layoutX="33.0" layoutY="89.0" prefHeight="17.0" prefWidth="85.0" text="Last updated:" />
-      <ComboBox layoutX="374.0" layoutY="29.0" prefWidth="150.0" />
-      <DatePicker layoutX="118.0" layoutY="85.0" />
-      <TextField layoutX="115.0" layoutY="29.0" />
-      <Button layoutX="472.0" layoutY="188.0" mnemonicParsing="false" text="Update" />
-      <TableView layoutX="33.0" layoutY="264.0" prefHeight="200.0" prefWidth="547.0">
+      <ComboBox fx:id="categorycombo" layoutX="374.0" layoutY="29.0" prefWidth="150.0" />
+      <DatePicker fx:id="lastupdatedatepicker" layoutX="118.0" layoutY="85.0" />
+      <TextField fx:id="searchitemstext" layoutX="115.0" layoutY="29.0" />
+      <Button layoutX="472.0" layoutY="188.0" mnemonicParsing="false" onAction="#updatebutton" text="Update" />
+      <TableView fx:id="inventorystatustable" layoutX="33.0" layoutY="264.0" prefHeight="200.0" prefWidth="547.0">
         <columns>
-          <TableColumn prefWidth="98.66668701171875" text="Category" />
-          <TableColumn prefWidth="111.33328247070312" text="Item name" />
-            <TableColumn prefWidth="118.66668701171875" text="Quantity" />
-            <TableColumn prefWidth="112.0" text="Status" />
-            <TableColumn prefWidth="112.0" text="Last updated" />
+          <TableColumn fx:id="categorytabcol" prefWidth="98.66668701171875" text="Category" />
+          <TableColumn fx:id="itemnametabcol" prefWidth="111.33328247070312" text="Item name" />
+            <TableColumn fx:id="quantitytabcol" prefWidth="118.66668701171875" text="Quantity" />
+            <TableColumn fx:id="statustabcol" prefWidth="112.0" text="Status" />
+            <TableColumn fx:id="lastupdatedtabcol" prefWidth="112.0" text="Last updated" />
         </columns>
       </TableView>
       <Label layoutX="33.0" layoutY="134.0" prefHeight="17.0" prefWidth="85.0" text="Restock notes:" />
-      <TextArea layoutX="125.0" layoutY="134.0" prefHeight="107.0" prefWidth="307.0" />
+      <TextArea fx:id="remarkstext" layoutX="125.0" layoutY="134.0" prefHeight="107.0" prefWidth="307.0" />
+      <Button layoutX="481.0" layoutY="476.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
    </children>
 </AnchorPane>

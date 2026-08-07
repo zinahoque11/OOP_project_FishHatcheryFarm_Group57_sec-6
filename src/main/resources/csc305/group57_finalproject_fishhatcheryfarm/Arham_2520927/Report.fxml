@@ -9,27 +9,28 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="433.0" prefWidth="638.0" style="-fx-background-color: normal;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="433.0" prefWidth="638.0" style="-fx-background-color: normal;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ReportController">
    <children>
       <Label layoutX="33.0" layoutY="27.0" style="-fx-background-color: white;" text="Report type:" />
       <Label layoutX="286.0" layoutY="27.0" style="-fx-background-color: white;" text="Purchase Date:" />
-      <DatePicker layoutX="388.0" layoutY="23.0" prefHeight="25.0" prefWidth="143.0" />
-      <Button layoutX="218.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="Generate report" />
-      <TableView layoutX="10.0" layoutY="130.0" prefHeight="200.0" prefWidth="617.0">
+      <DatePicker fx:id="purchasedatedatepicker" layoutX="388.0" layoutY="23.0" prefHeight="25.0" prefWidth="143.0" />
+      <Button layoutX="218.0" layoutY="78.0" mnemonicParsing="false" onAction="#generatebutton" prefHeight="25.0" prefWidth="163.0" text="Generate report" />
+      <TableView fx:id="reporttable" layoutX="10.0" layoutY="130.0" prefHeight="200.0" prefWidth="617.0">
         <columns>
-          <TableColumn prefWidth="109.99993896484375" text="Account" />
-          <TableColumn prefWidth="136.00003051757812" text="Transaction" />
-            <TableColumn prefWidth="116.0" text="Amount" />
-            <TableColumn prefWidth="128.66668701171875" text="Date" />
-            <TableColumn prefWidth="128.66668701171875" text="Status" />
+          <TableColumn fx:id="accounttabcol" prefWidth="109.99993896484375" text="Account" />
+          <TableColumn fx:id="traansactiontabcol" prefWidth="136.00003051757812" text="Transaction" />
+            <TableColumn fx:id="amounttabcol" prefWidth="116.0" text="Amount" />
+            <TableColumn fx:id="datetabcol" prefWidth="128.66668701171875" text="Date" />
+            <TableColumn fx:id="statustabcol" prefWidth="128.66668701171875" text="Status" />
         </columns>
       </TableView>
-      <ComboBox layoutX="119.0" layoutY="23.0" prefWidth="150.0" />
-      <TextField layoutX="130.0" layoutY="344.0" />
+      <ComboBox fx:id="reporttypecombo" layoutX="119.0" layoutY="23.0" prefWidth="150.0" />
+      <TextField fx:id="totalincometext" layoutX="130.0" layoutY="344.0" />
       <Label layoutX="33.0" layoutY="348.0" style="-fx-background-color: white;" text="Total income:" />
       <Label layoutX="345.0" layoutY="348.0" style="-fx-background-color: white;" text="Total expense:" />
-      <TextField layoutX="447.0" layoutY="344.0" />
-      <TextField layoutX="130.0" layoutY="383.0" />
+      <TextField fx:id="totalexpensetext" layoutX="447.0" layoutY="344.0" />
+      <TextField fx:id="netbalancetext" layoutX="130.0" layoutY="383.0" />
       <Label layoutX="33.0" layoutY="387.0" style="-fx-background-color: white;" text="Net balance:" />
+      <Button layoutX="551.0" layoutY="383.0" mnemonicParsing="false" onAction="#Backbutton" prefHeight="25.0" prefWidth="59.0" text="Back" />
    </children>
 </AnchorPane>

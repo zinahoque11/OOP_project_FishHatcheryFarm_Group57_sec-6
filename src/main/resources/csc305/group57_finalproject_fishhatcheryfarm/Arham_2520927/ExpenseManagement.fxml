@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="431.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ExpenseManagementController">
+<AnchorPane prefHeight="459.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.ExpenseManagementController">
    <children>
       <Label layoutX="333.0" layoutY="69.0" text="Date:" />
       <Label layoutX="333.0" layoutY="27.0" text="Amount(BDT):" />
@@ -29,5 +29,6 @@
             <TableColumn fx:id="statustabcol" prefWidth="115.33330281575525" text="Status" />
         </columns>
       </TableView>
+      <Button layoutX="512.0" layoutY="403.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
    </children>
 </AnchorPane>

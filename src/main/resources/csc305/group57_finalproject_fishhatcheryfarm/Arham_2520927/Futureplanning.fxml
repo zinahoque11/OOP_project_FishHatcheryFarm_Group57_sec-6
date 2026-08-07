@@ -10,26 +10,27 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="537.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="537.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.FutureplanningController">
    <children>
       <Label layoutX="38.0" layoutY="56.0" text="Resource type:" />
       <Label layoutX="36.0" layoutY="89.0" text="Strategic notes:" />
       <Label layoutX="238.0" layoutY="118.0" />
       <Label layoutX="38.0" layoutY="22.0" text="Target Quantity:" />
       <Label layoutX="346.0" layoutY="22.0" text="Deadline:" />
-      <TextField layoutX="140.0" layoutY="18.0" prefHeight="17.0" prefWidth="132.0" />
-      <DatePicker layoutX="423.0" layoutY="18.0" prefHeight="25.0" prefWidth="141.0" />
-      <Button layoutX="409.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: pink;" text="Save Future Plan" />
-      <TableView layoutX="38.0" layoutY="269.0" prefHeight="200.0" prefWidth="553.0">
+      <TextField fx:id="targetquantitytext" layoutX="140.0" layoutY="18.0" prefHeight="17.0" prefWidth="132.0" />
+      <DatePicker fx:id="deadlinedatepicker" layoutX="423.0" layoutY="18.0" prefHeight="25.0" prefWidth="141.0" />
+      <Button layoutX="409.0" layoutY="211.0" mnemonicParsing="false" onAction="#savefutureplanbutton" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: pink;" text="Save Future Plan" />
+      <TableView fx:id="futureplantable" layoutX="38.0" layoutY="269.0" prefHeight="200.0" prefWidth="553.0">
         <columns>
-          <TableColumn prefWidth="76.66665649414062" text="Projection" />
-          <TableColumn prefWidth="101.33331298828125" text="Resource" />
-            <TableColumn prefWidth="74.6666259765625" text="Deadline" />
-            <TableColumn prefWidth="161.3333740234375" text="Notes" />
-            <TableColumn prefWidth="139.99993896484375" text="Status" />
+          <TableColumn fx:id="projectiontabcol" prefWidth="76.66665649414062" text="Projection" />
+          <TableColumn fx:id="resourcetabcol" prefWidth="101.33331298828125" text="Resource" />
+            <TableColumn fx:id="deadlinetabcol" prefWidth="74.6666259765625" text="Deadline" />
+            <TableColumn fx:id="notestabcol" prefWidth="161.3333740234375" text="Notes" />
+            <TableColumn fx:id="statustabcol" prefWidth="139.99993896484375" text="Status" />
         </columns>
       </TableView>
-      <TextArea layoutX="131.0" layoutY="91.0" prefHeight="90.0" prefWidth="315.0" />
-      <ComboBox layoutX="140.0" layoutY="52.0" prefWidth="150.0" />
+      <TextArea fx:id="strategicnotestextarea" layoutX="131.0" layoutY="91.0" prefHeight="90.0" prefWidth="315.0" />
+      <ComboBox fx:id="resourcetypecombobox" layoutX="140.0" layoutY="52.0" prefWidth="150.0" />
+      <Button layoutX="428.0" layoutY="482.0" mnemonicParsing="false" onAction="#Backbutton" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: pink;" text="Back" />
    </children>
 </AnchorPane>

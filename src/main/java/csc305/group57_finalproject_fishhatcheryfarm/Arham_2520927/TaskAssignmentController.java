@@ -1,34 +1,32 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
-public class ExpenseManagementController
+public class TaskAssignmentController
 {
     @javafx.fxml.FXML
-    private TextField expensetitletext;
+    private TableColumn detailstabcol;
     @javafx.fxml.FXML
-    private TextField amounttext;
+    private TextArea taskdetailstext;
     @javafx.fxml.FXML
-    private TableColumn expensetitletabcol;
+    private DatePicker duedatedatepicker;
     @javafx.fxml.FXML
-    private DatePicker datedatepicker;
+    private TableView taskassignmenttable;
     @javafx.fxml.FXML
-    private TableColumn datetabcol;
+    private ComboBox selecttaskcombo;
     @javafx.fxml.FXML
-    private TableColumn amounttabcol;
-    @javafx.fxml.FXML
-    private TableColumn typetabcol;
+    private TableColumn workertabcol;
     @javafx.fxml.FXML
     private TableColumn statustabcol;
     @javafx.fxml.FXML
-    private TableView expensemanagementtab;
+    private ComboBox selectworkercombo;
     @javafx.fxml.FXML
-    private ComboBox expensecombo;
+    private TableColumn tasktabcol;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void savebutton(ActionEvent actionEvent) {
+    public void assignbutton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
