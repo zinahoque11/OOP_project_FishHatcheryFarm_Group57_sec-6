@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="446.0" prefWidth="676.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordExpiredFoodQuantityController">
+<AnchorPane fx:id="mainPane" prefHeight="446.0" prefWidth="676.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordExpiredFoodQuantityController">
    <children>
       <Label layoutX="39.0" layoutY="34.0" style="-fx-font-weight: bold;" text="Food Type:">
          <font>
@@ -23,15 +23,15 @@
          </font>
       </Label>
       <DatePicker fx:id="expiryDateDP" layoutX="119.0" layoutY="75.0" />
-      <TableView fx:id="removeExpiredFoodTV" layoutX="39.0" layoutY="168.0" prefHeight="200.0" prefWidth="548.0">
+      <TableView fx:id="removeExpiredFoodTV" layoutX="39.0" layoutY="168.0" prefHeight="200.0" prefWidth="601.0">
         <columns>
           <TableColumn fx:id="foodTypeColumn" prefWidth="186.0" text="Food Type" />
-            <TableColumn fx:id="expiryDateColumn" prefWidth="167.0" text="Expiry Date" />
-            <TableColumn fx:id="expiredFoodQuantityColumn" prefWidth="194.0" text="Expired Food Quantity" />
+            <TableColumn fx:id="expiryDateColumn" prefWidth="224.666748046875" text="Expiry Date" />
+            <TableColumn fx:id="expiredFoodQuantityColumn" prefWidth="189.333251953125" text="Expired Food Quantity" />
         </columns>
       </TableView>
       <Button layoutX="337.0" layoutY="75.0" mnemonicParsing="false" onAction="#recordExpiredFoodQuantityButtonOA" prefHeight="25.0" prefWidth="175.0" text="Record Expired Food Quantity" />
-      <Button layoutX="473.0" layoutY="389.0" mnemonicParsing="false" onAction="#homePageOA" prefHeight="25.0" prefWidth="91.0" text="Home Page" />
+      <Button layoutX="473.0" layoutY="389.0" mnemonicParsing="false" onAction="#homePageOA" prefHeight="25.0" prefWidth="91.0" text="Back" />
       <Label layoutX="303.0" layoutY="34.0" style="-fx-font-weight: bold;" text="Expired Food Quantity (in kg):">
          <font>
             <Font size="13.0" />

@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainPane" prefHeight="548.0" prefWidth="585.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.FishFoodManagerDashboardController">
+<AnchorPane fx:id="mainPane" prefHeight="548.0" prefWidth="585.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.FishFoodManagerDashboardController">
    <children>
       <Text fill="#5470cc" layoutX="104.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fish Food Manager Dashboard">
          <font>
@@ -38,6 +38,6 @@
       </Button>
       <Button layoutX="39.0" layoutY="353.0" mnemonicParsing="false" onAction="#createFeedSchedule" prefHeight="25.0" prefWidth="512.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Create Feeding Schedule" textFill="WHITE" />
       <Button layoutX="39.0" layoutY="443.0" mnemonicParsing="false" onAction="#assignMed" prefHeight="25.0" prefWidth="519.0" style="-fx-background-color: #4682B4; -fx-font-weight: bold;" text="Assign Medication" textFill="WHITE" />
-      <Button layoutX="257.0" layoutY="495.0" mnemonicParsing="false" onAction="#homePageOA" text="HomePage" />
+      <Button layoutX="257.0" layoutY="495.0" mnemonicParsing="false" onAction="#homePageOA" prefHeight="25.0" prefWidth="97.0" text="Sign Out" />
    </children>
 </AnchorPane>
