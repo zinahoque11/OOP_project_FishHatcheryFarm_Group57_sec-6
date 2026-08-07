@@ -15,7 +15,7 @@
          </font>
       </Text>
       <Line endX="209.33331298828125" endY="-8.000007629394531" layoutX="264.0" layoutY="80.0" startX="-137.33334350585938" startY="-8.000007629394531" />
-      <Button layoutX="113.0" layoutY="109.0" mnemonicParsing="false" onAction="#addexpenseDBbutton" prefHeight="39.0" prefWidth="373.0" text="Add Expense">
+      <Button layoutX="113.0" layoutY="109.0" mnemonicParsing="false" onAction="#addexpenseDBDbutton" prefHeight="39.0" prefWidth="373.0" text="Add Expense">
          <font>
             <Font size="18.0" />
          </font>
