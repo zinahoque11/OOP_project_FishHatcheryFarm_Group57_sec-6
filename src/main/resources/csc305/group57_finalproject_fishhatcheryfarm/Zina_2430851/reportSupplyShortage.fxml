@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainPane" prefHeight="475.0" prefWidth="652.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.reportSupplyShortageController">
+<AnchorPane fx:id="mainPane" prefHeight="475.0" prefWidth="652.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.reportSupplyShortageController">
    <children>
       <Label layoutX="35.0" layoutY="36.0" text="Supply Category:" />
       <Label layoutX="338.0" layoutY="36.0" text="Requested Quantity:" />
@@ -22,6 +22,6 @@
       <DatePicker fx:id="restockDateDP" layoutX="463.0" layoutY="89.0" />
       <TextArea fx:id="reasonsForShortageTA" layoutX="25.0" layoutY="205.0" prefHeight="200.0" prefWidth="610.0" promptText="Reasons For Shortage (Optional)" />
       <Button layoutX="392.0" layoutY="152.0" mnemonicParsing="false" onAction="#submitReportButton" prefHeight="25.0" prefWidth="222.0" text="Submit Report" />
-      <Button layoutX="550.0" layoutY="426.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="81.0" text="Home Page" />
+      <Button layoutX="550.0" layoutY="426.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="81.0" text="Back" />
    </children>
 </AnchorPane>

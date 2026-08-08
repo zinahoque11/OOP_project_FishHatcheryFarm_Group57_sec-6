@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="480.0" prefWidth="611.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
+<AnchorPane fx:id="mainPane" prefHeight="480.0" prefWidth="611.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.recordWastedFoodController">
    <children>
       <Label layoutX="48.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Food Intake (in kg):" textAlignment="CENTER" wrapText="true">
          <font>
@@ -41,7 +41,7 @@
       </Label>
       <TextField fx:id="tankIdTF" layoutX="116.0" layoutY="136.0" />
       <Button layoutX="39.0" layoutY="317.0" mnemonicParsing="false" onAction="#saveUpdateButtonOA" prefHeight="40.0" prefWidth="163.0" style="-fx-font-weight: bold;" text="SAVE UPDATE" textFill="#557bb5" />
-      <Button layoutX="476.0" layoutY="415.0" mnemonicParsing="false" onAction="#homePageButtonOA" prefHeight="25.0" prefWidth="91.0" text="Home Page" />
+      <Button layoutX="476.0" layoutY="415.0" mnemonicParsing="false" onAction="#homePageButtonOA" prefHeight="25.0" prefWidth="91.0" text="Back" />
       <Label layoutX="348.0" layoutY="47.0" style="-fx-font-weight: bold;" text="Fish Species:">
          <font>
             <Font size="13.0" />

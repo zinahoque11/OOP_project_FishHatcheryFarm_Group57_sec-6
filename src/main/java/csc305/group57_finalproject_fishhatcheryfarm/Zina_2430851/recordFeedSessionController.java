@@ -82,9 +82,10 @@ public class recordFeedSessionController
     @javafx.fxml.FXML
     public void homePageButton(ActionEvent actionEvent) {
 
+        //Back to Manager's Dashboard
         SceneSwitcher.switchScene(actionEvent,
-                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
-                "Home Page");
+                "/csc305/group57_finalproject_fishhatcheryfarm/Zina_2430851/FishFoodManagerDashboard.fxml",
+                "Fish Food Manager Dashboard");
     }
 
     @javafx.fxml.FXML

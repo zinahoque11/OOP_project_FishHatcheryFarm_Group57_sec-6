@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPane" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.createFeedingScheduleController">
+<AnchorPane fx:id="mainPane" prefHeight="529.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.createFeedingScheduleController">
    <children>
       <Label layoutX="43.0" layoutY="35.0" style="-fx-font-weight: bold;" text="Fish Species:" />
       <ComboBox fx:id="fishSpeciesCB" layoutX="121.0" layoutY="31.0" prefWidth="150.0" />
@@ -22,7 +22,7 @@
       <TextField fx:id="tankIdTF" layoutX="424.0" layoutY="118.0" />
       <Label layoutX="362.0" layoutY="122.0" style="-fx-font-weight: bold;" text="Tank ID:" />
       <Button layoutX="50.0" layoutY="184.0" mnemonicParsing="false" onAction="#createScheduleButtonOA" prefHeight="25.0" prefWidth="185.0" style="-fx-font-weight: bold;" text="Create Schedule" textFill="#4c6fc9" />
-      <Button layoutX="489.0" layoutY="473.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="89.0" text="Home Page" />
+      <Button layoutX="489.0" layoutY="473.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="89.0" text="Back" />
       <Button layoutX="281.0" layoutY="184.0" mnemonicParsing="false" onAction="#showScheduleOA" prefHeight="25.0" prefWidth="185.0" text="Show Schedule" textFill="#3f1bdd">
          <font>
             <Font name="System Bold" size="12.0" />
