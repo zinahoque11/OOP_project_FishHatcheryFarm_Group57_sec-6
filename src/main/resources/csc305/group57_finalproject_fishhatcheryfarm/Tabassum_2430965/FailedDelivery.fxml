@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="646.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.FailedDelivery">
+   <children>
+      <Label layoutX="215.0" layoutY="32.0" text="Failed Delivery Report">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="66.0" layoutY="103.0" prefHeight="200.0" prefWidth="555.0">
+        <columns>
+          <TableColumn prefWidth="133.60003662109375" text="Order ID" />
+          <TableColumn prefWidth="208.79998779296875" text="Customer Name" />
+            <TableColumn prefWidth="212.7999267578125" text="Address" />
+        </columns>
+      </TableView>
+      <ComboBox layoutX="290.0" layoutY="332.0" prefWidth="150.0" />
+      <Label layoutX="183.0" layoutY="336.0" text="Reason :" />
+      <Button layoutX="297.0" layoutY="389.0" mnemonicParsing="false" text="Submit Report" />
+      <Label layoutX="115.0" layoutY="444.0" text="Delivery Status" />
+      <TextField layoutX="201.0" layoutY="471.0" prefHeight="118.0" prefWidth="310.0" />
+   </children>
+</AnchorPane>
