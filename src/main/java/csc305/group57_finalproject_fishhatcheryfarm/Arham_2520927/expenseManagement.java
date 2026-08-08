@@ -16,6 +16,9 @@ public class expenseManagement implements Serializable {
         this.date = date;
     }
 
+    public expenseManagement() {
+    }
+
     public String getExpensetitle() {
         return expensetitle;
     }

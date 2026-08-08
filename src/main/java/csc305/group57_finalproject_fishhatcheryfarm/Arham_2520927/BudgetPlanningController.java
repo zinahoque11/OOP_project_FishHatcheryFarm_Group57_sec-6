@@ -43,10 +43,11 @@ public class BudgetPlanningController
 
     @javafx.fxml.FXML
     public void updateonact(ActionEvent actionEvent) {
-        budgetplan bp = new budgetplan(projectnametext.getText(),
-                budgetcategorycombo.getValue(),
-                Float.parseFloat(totalamounttext.getText()),
-                budgetperiodtext.getValue());
+        budgetplan bp = new budgetplan();
+        bp.setCategory(budgetcategorycombo.getValue());
+        bp.setDepartment(projectnametext.getText());
+        bp.setPeriod(budgetperiodtext.getValue());
+        bp.setTotalAmount(Float.parseFloat(totalamounttext.getText()));
 
         File f = new File("Budget Plan.bin");
         FileOutputStream fos;

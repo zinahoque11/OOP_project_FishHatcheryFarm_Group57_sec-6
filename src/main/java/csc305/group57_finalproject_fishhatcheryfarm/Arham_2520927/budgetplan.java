@@ -16,6 +16,9 @@ public class budgetplan implements Serializable {
         this.period = period;
     }
 
+    public budgetplan() {
+    }
+
     public String getDepartment() {
         return department;
     }
