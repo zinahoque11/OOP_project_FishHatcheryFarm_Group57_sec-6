@@ -22,13 +22,13 @@
       <Button layoutX="280.0" layoutY="131.0" mnemonicParsing="false" onAction="#savebutton" text="Save" />
       <TableView fx:id="expensemanagementtab" layoutX="34.0" layoutY="182.0" prefHeight="200.0" prefWidth="573.0">
         <columns>
-          <TableColumn fx:id="datetabcol" prefWidth="105.33331298828125" text="Date" />
-          <TableColumn fx:id="expensetitletabcol" prefWidth="115.99996948242188" text="Expense Title" />
-            <TableColumn fx:id="amounttabcol" prefWidth="116.00001525878906" text="Amount" />
-            <TableColumn fx:id="typetabcol" prefWidth="118.6666259765625" text="Type" />
-            <TableColumn fx:id="statustabcol" prefWidth="115.33330281575525" text="Status" />
+          <TableColumn fx:id="datetabcol" prefWidth="132.0000343322754" text="Date" />
+          <TableColumn fx:id="expensetitletabcol" prefWidth="155.3332977294922" text="Expense Title" />
+            <TableColumn fx:id="amounttabcol" prefWidth="128.0" text="Amount" />
+            <TableColumn fx:id="typetabcol" prefWidth="158.00009155273438" text="Type" />
         </columns>
       </TableView>
       <Button layoutX="512.0" layoutY="403.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+      <Button layoutX="249.0" layoutY="403.0" mnemonicParsing="false" onAction="#viewbutton" text="View" />
    </children>
 </AnchorPane>
