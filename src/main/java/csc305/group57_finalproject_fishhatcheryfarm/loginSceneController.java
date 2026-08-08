@@ -96,6 +96,18 @@ public class loginSceneController
                         "/csc305/group57_finalproject_fishhatcheryfarm/Tabassum_2430965/DeliveryManDashboard.fxml",
                         "Delivery Man Dashboard");
 
+
+            case "Managing Director":
+                SceneSwitcher.switchScene(actionEvent,
+                        "/csc305/group57_finalproject_fishhatcheryfarm/Arham_2520927/ManagingDirectorDashboard.fxml",
+                        "Managing Director Dashboard");
+
+
+            case "Accountant":
+                SceneSwitcher.switchScene(actionEvent,
+                        "/csc305/group57_finalproject_fishhatcheryfarm/Arham_2520927/AccountantDashboard.fxml",
+                        "Accountant Dashboard");
+
                 break;
 
 
