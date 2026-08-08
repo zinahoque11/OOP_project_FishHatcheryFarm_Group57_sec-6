@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="647.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.TransportationStatus">
    <children>
       <Label layoutX="256.0" layoutY="50.0" text="Transportation Status">
@@ -16,15 +15,15 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="64.0" layoutY="132.0" prefHeight="328.0" prefWidth="614.0">
+      <TableView fx:id="tblTransportationStatus" layoutX="64.0" layoutY="132.0" prefHeight="328.0" prefWidth="614.0">
         <columns>
-          <TableColumn prefWidth="116.7999496459961" text="Order ID" />
-          <TableColumn prefWidth="263.20001220703125" text="Customer Name" />
-            <TableColumn prefWidth="233.60000610351562" text="Current Status" />
+          <TableColumn fx:id="colOrderID" prefWidth="116.7999496459961" text="Order ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="263.20001220703125" text="Customer Name" />
+            <TableColumn fx:id="colCurrentStatus" prefWidth="233.60000610351562" text="Current Status" />
         </columns>
       </TableView>
-      <ComboBox layoutX="377.0" layoutY="503.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbCurrentStatus" layoutX="377.0" layoutY="503.0" prefWidth="150.0" />
       <Label layoutX="214.0" layoutY="507.0" text="Current Status :" />
-      <Button layoutX="289.0" layoutY="560.0" mnemonicParsing="false" text="Update Transportation Status" />
+      <Button layoutX="289.0" layoutY="560.0" mnemonicParsing="false" onAction="#btnUpdateTransporationStatus" text="Update Transportation Status" />
    </children>
 </AnchorPane>

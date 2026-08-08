@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="622.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.VerifyCustomerLocation">
    <children>
       <Label layoutX="217.0" layoutY="47.0" text="Verify Customer Location">
@@ -16,16 +15,16 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="65.0" layoutY="111.0" prefHeight="200.0" prefWidth="561.0">
+      <TableView fx:id="tblVerifyCustomer" layoutX="65.0" layoutY="111.0" prefHeight="200.0" prefWidth="561.0">
         <columns>
-          <TableColumn prefWidth="126.4000244140625" text="Order ID" />
-          <TableColumn prefWidth="156.7999725341797" text="Customer Name" />
-            <TableColumn prefWidth="116.0" text="Address" />
-            <TableColumn prefWidth="162.4000244140625" text="Mobile Number" />
+          <TableColumn fx:id="colOrderID" prefWidth="126.4000244140625" text="Order ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="156.7999725341797" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="116.0" text="Address" />
+            <TableColumn fx:id="colMobileNum" prefWidth="162.4000244140625" text="Mobile Number" />
         </columns>
       </TableView>
-      <TextArea layoutX="96.0" layoutY="339.0" prefHeight="165.0" prefWidth="494.0" text="Map / Location Details" />
-      <Button layoutX="195.0" layoutY="534.0" mnemonicParsing="false" text="Contact Customer" />
-      <Button layoutX="441.0" layoutY="534.0" mnemonicParsing="false" text="Verify Location" />
+      <TextArea fx:id="txtAreaMapDetails" layoutX="96.0" layoutY="339.0" prefHeight="165.0" prefWidth="494.0" text="Map / Location Details" />
+      <Button layoutX="195.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnContactCustomer" text="Contact Customer" />
+      <Button layoutX="441.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnVerifyLocation" text="Verify Location" />
    </children>
 </AnchorPane>

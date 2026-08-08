@@ -7,23 +7,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="647.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.AssignedDeliveries">
+<AnchorPane prefHeight="647.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.AssignedDeliveries">
    <children>
-      <Label layoutX="272.0" layoutY="54.0" text="Assigned Deliveries">
+      <Label fx:id="LabelAssigDeliver" layoutX="272.0" layoutY="54.0" text="Assigned Deliveries">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="72.0" layoutY="138.0" prefHeight="395.0" prefWidth="618.0">
+      <TableView fx:id="tableviewAssignedDeliv" layoutX="72.0" layoutY="138.0" prefHeight="395.0" prefWidth="618.0">
         <columns>
-          <TableColumn prefWidth="88.80001831054688" text="Order ID" />
-          <TableColumn prefWidth="113.59999084472656" text="Fish Type" />
-            <TableColumn prefWidth="144.79998779296875" text="Customer Name" />
-            <TableColumn prefWidth="148.79998779296875" text="Customer Location" />
-            <TableColumn prefWidth="123.20001220703125" text="Quantity" />
+          <TableColumn fx:id="tablecolumnOrderID" prefWidth="88.80001831054688" text="Order ID" />
+          <TableColumn fx:id="TableColumnFishType" prefWidth="113.59999084472656" text="Fish Type" />
+            <TableColumn fx:id="TableColumncumtNam" prefWidth="144.79998779296875" text="Customer Name" />
+            <TableColumn fx:id="TableColumncustomerloc" prefWidth="148.79998779296875" text="Customer Location" />
+            <TableColumn fx:id="TableColumnQuantity" prefWidth="123.20001220703125" text="Quantity" />
         </columns>
       </TableView>
-      <Button layoutX="320.0" layoutY="568.0" mnemonicParsing="false" text="Start Transportation" />
+      <Button layoutX="320.0" layoutY="568.0" mnemonicParsing="false" onAction="#btnStartTransport" text="Start Transportation" />
    </children>
 </AnchorPane>
