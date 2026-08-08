@@ -1,5 +1,6 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
+import csc305.group57_finalproject_fishhatcheryfarm.Utils.SceneSwitcher;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -52,9 +53,11 @@ public class ProductionplanningController {
     }
 
     @FXML
-    private void Backbutton(ActionEvent event) {
-        // Logic to go back to previous screen
-        System.out.println("Back button clicked.");
+    private void Backbutton(ActionEvent actionEvent) {
+        SceneSwitcher.switchScene(actionEvent,
+                "/csc305/group57_finalproject_fishhatcheryfarm/loginScene.fxml",
+                "Home Page");
+
     }
 
     private void showSuccessAlert(String message) {
