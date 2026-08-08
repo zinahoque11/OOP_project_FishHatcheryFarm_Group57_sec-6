@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="638.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Tabassum_2430965.DamagedShipment">
    <children>
       <Label layoutX="206.0" layoutY="58.0" text="Damaged Shipment Report">
@@ -18,20 +17,20 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="94.0" layoutY="119.0" prefHeight="200.0" prefWidth="532.0">
+      <TableView fx:id="tblDamagedShipment" layoutX="94.0" layoutY="119.0" prefHeight="200.0" prefWidth="532.0">
         <columns>
-          <TableColumn prefWidth="138.4000244140625" text="Order ID" />
-          <TableColumn prefWidth="192.7999725341797" text="Fish Type" />
-            <TableColumn prefWidth="199.99993896484375" text="Quantity" />
+          <TableColumn fx:id="colOrderID" prefWidth="138.4000244140625" text="Order ID" />
+          <TableColumn fx:id="colFishTYpe" prefWidth="192.7999725341797" text="Fish Type" />
+            <TableColumn fx:id="colQuantity" prefWidth="199.99993896484375" text="Quantity" />
         </columns>
       </TableView>
       <Label layoutX="140.0" layoutY="348.0" text="Dead Fish Quantity" />
-      <TextField layoutX="330.0" layoutY="344.0" />
+      <TextField fx:id="txtDesdFishQuantity" layoutX="330.0" layoutY="344.0" />
       <Label layoutX="148.0" layoutY="430.0" text="Damage Details" />
-      <TextArea layoutX="264.0" layoutY="384.0" prefHeight="110.0" prefWidth="294.0" />
-      <Button layoutX="319.0" layoutY="513.0" mnemonicParsing="false" text="Upload Image" />
+      <TextArea fx:id="txtDamageDetails" layoutX="264.0" layoutY="384.0" prefHeight="110.0" prefWidth="294.0" />
+      <Button layoutX="319.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnUploadImage" text="Upload Image" />
       <Label layoutX="165.0" layoutY="567.0" text="Status" />
-      <ComboBox layoutX="263.0" layoutY="563.0" prefWidth="150.0" />
-      <Button layoutX="480.0" layoutY="563.0" mnemonicParsing="false" text="Submit Report" />
+      <ComboBox fx:id="cmbStatus" layoutX="263.0" layoutY="563.0" prefWidth="150.0" />
+      <Button layoutX="480.0" layoutY="563.0" mnemonicParsing="false" onAction="#btnSubmitReport" text="Submit Report" />
    </children>
 </AnchorPane>
