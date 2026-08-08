@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="BatchIDCombobox" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.HatcheryProduction.ArchivedHatchBatchController">
+   <children>
+      <TableView fx:id="Tableview" layoutY="92.0" prefHeight="134.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="BatchIDTablecolumn" prefWidth="142.66665649414062" text="BatchId" />
+          <TableColumn fx:id="SpeciesTablecolumn" prefWidth="157.33331298828125" text="Species" />
+            <TableColumn fx:id="CompletionDateTablecolumn" prefWidth="151.3333740234375" text=" Completion Date" />
+            <TableColumn fx:id="StatusTablecolumn" prefWidth="146.00006103515625" text="Status " />
+        </columns>
+      </TableView>
+      <Button layoutX="247.0" layoutY="243.0" mnemonicParsing="false" onAction="#reloadButton" text="Reload Table" />
+      <ComboBox fx:id="batchIDCombobox" layoutX="115.0" layoutY="21.0" prefWidth="150.0" />
+      <Label layoutX="51.0" layoutY="25.0" text="Batch ID:" />
+      <Button layoutX="289.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+   </children>
+</AnchorPane>

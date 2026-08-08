@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.DeliveryAndSales.BatchRevenueSummaryCONTROLLER_NAME">
+   <children>
+      <TableView fx:id="Tableview" layoutX="24.0" layoutY="109.0" prefHeight="113.0" prefWidth="551.0">
+        <columns>
+          <TableColumn fx:id="BatchIDTablecolumn" prefWidth="117.99996948242188" text="BatchID" />
+          <TableColumn fx:id="routetaablecolumn" prefWidth="147.33334350585938" text="route" />
+            <TableColumn fx:id="TotalordersTablecolumn" prefWidth="144.6666259765625" text="Totalorders" />
+            <TableColumn fx:id="Statustablecolumn" prefWidth="139.3333740234375" text="status" />
+        </columns>
+      </TableView>
+      <Button layoutX="65.0" layoutY="244.0" mnemonicParsing="false" onAction="#Calculaterevenuebutton" text="Calculate revenue" />
+      <Button layoutX="257.0" layoutY="244.0" mnemonicParsing="false" onAction="#clearbutton" text="clear" />
+      <Button layoutX="417.0" layoutY="244.0" mnemonicParsing="false" onAction="#backbutton" text="back" />
+   </children>
+</AnchorPane>

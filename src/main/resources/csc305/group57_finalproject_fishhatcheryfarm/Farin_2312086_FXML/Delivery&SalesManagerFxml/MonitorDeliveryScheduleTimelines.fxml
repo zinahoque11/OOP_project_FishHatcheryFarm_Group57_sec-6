@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="508.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.DeliveryAndSales.DeliveryScheduleTimelineCONTROLLER_NAME">
+   <children>
+      <TableView fx:id="Tableview" layoutX="21.0" layoutY="46.0" prefHeight="125.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="BatchIDTablecolumn" prefWidth="75.0" text="BatchID" />
+          <TableColumn fx:id="VehicleTablecolumn" prefWidth="102.00003051757812" text="vehicle" />
+            <TableColumn fx:id="DateTablecolumn" prefWidth="102.0" text="Date" />
+            <TableColumn fx:id="statusTablecolumn" prefWidth="137.3333740234375" text="status" />
+            <TableColumn fx:id="processTablecolumn" prefWidth="139.99993896484375" text="process" />
+        </columns>
+      </TableView>
+      <Label layoutX="69.0" layoutY="208.0" />
+      <Label layoutX="69.0" layoutY="233.0" />
+      <BarChart fx:id="Barchart" layoutX="155.0" layoutY="205.0" prefHeight="201.0" prefWidth="404.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="53.0" layoutY="427.0" text="Status" />
+      <TextField fx:id="StatusTextfield" layoutX="105.0" layoutY="423.0" />
+   </children>
+</AnchorPane>
