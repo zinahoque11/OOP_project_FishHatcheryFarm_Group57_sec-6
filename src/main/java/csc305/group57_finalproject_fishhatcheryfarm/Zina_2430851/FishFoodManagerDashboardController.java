@@ -24,7 +24,7 @@ public class FishFoodManagerDashboardController
     public void updateFoodIntake(ActionEvent actionEvent) {
         SceneSwitcher.switchScene(actionEvent,
                 "/csc305/group57_finalproject_fishhatcheryfarm/Zina_2430851/recordFeedSessions.fxml",
-                "Update Food Intake Section");
+                "Record Feeding sessions");
     }
 
     @javafx.fxml.FXML

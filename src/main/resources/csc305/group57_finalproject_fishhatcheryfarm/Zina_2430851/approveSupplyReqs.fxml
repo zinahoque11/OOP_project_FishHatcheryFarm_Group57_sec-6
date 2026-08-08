@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainPane" prefHeight="492.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.approveSupplyReqsController">
+<AnchorPane fx:id="mainPane" prefHeight="492.0" prefWidth="640.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.approveSupplyReqsController">
    <children>
       <Label layoutX="55.0" layoutY="33.0" text="Product Type:" />
       <Label layoutX="55.0" layoutY="68.0" text="Requested Quantity:" />
@@ -22,7 +22,7 @@
       <Label layoutX="46.0" layoutY="396.0" text="Approval:" />
       <ComboBox fx:id="approvalCB" layoutX="109.0" layoutY="392.0" prefWidth="150.0" />
       <Button layoutX="308.0" layoutY="392.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="25.0" prefWidth="84.0" text="Submit" />
-      <Button layoutX="525.0" layoutY="436.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="90.0" text="Home Page" />
+      <Button layoutX="525.0" layoutY="436.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="90.0" text="Back" />
       <Label layoutX="57.0" layoutY="109.0" text="Product Name:" />
       <TextField fx:id="productNameTF" layoutX="170.0" layoutY="105.0" />
    </children>

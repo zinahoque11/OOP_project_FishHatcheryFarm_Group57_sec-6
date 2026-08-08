@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainPane" prefHeight="498.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.addFeedingSuppliesController">
+<AnchorPane fx:id="mainPane" prefHeight="498.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #A7E8F3, #4E9BB8);;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Zina_2430851.addFeedingSuppliesController">
    <children>
       <Label layoutX="39.0" layoutY="38.0" text="Product Name:" />
       <TextField fx:id="productNameTF" layoutX="125.0" layoutY="34.0" />
@@ -30,7 +30,7 @@
         </columns>
       </TableView>
       <Button layoutX="349.0" layoutY="137.0" mnemonicParsing="false" onAction="#addSuppliesButton" prefHeight="25.0" prefWidth="149.0" text="Add Supplies" />
-      <Button layoutX="486.0" layoutY="447.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="98.0" text="Home Page" />
+      <Button layoutX="486.0" layoutY="447.0" mnemonicParsing="false" onAction="#homePageButton" prefHeight="25.0" prefWidth="98.0" text="Back" />
       <DatePicker fx:id="deliveryDateDP" layoutX="118.0" layoutY="85.0" />
       <Button layoutX="236.0" layoutY="416.0" mnemonicParsing="false" onAction="#viewSuppliesOA" prefHeight="25.0" prefWidth="137.0" text="View Supplies" />
    </children>
