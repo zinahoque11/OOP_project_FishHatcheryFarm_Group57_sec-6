@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.InventoryCostController">
+<AnchorPane prefHeight="479.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927.InventoryCostController">
    <children>
       <Label layoutX="47.0" layoutY="33.0" text="Name of the item:" />
       <TextField fx:id="itemnametext" layoutX="159.0" layoutY="29.0" />
@@ -20,8 +20,8 @@
       <DatePicker fx:id="costperioddatepicker" layoutX="411.0" layoutY="29.0" />
       <Label layoutX="50.0" layoutY="121.0" text="Remarks:" />
       <TextArea fx:id="remarkstext" layoutX="120.0" layoutY="107.0" prefHeight="62.0" prefWidth="227.0" />
-      <Button layoutX="411.0" layoutY="129.0" mnemonicParsing="false" onAction="#updatebutton" text="Update" />
-      <TableView fx:id="inventorycosttable" layoutX="20.0" layoutY="193.0" prefHeight="200.0" prefWidth="568.0">
+      <Button layoutX="472.0" layoutY="184.0" mnemonicParsing="false" onAction="#updatebutton" text="Update" />
+      <TableView fx:id="inventorycosttable" layoutX="16.0" layoutY="222.0" prefHeight="200.0" prefWidth="568.0">
         <columns>
           <TableColumn fx:id="itemnametabcol" prefWidth="100.66665649414062" text="Item name" />
           <TableColumn fx:id="categorytabcol" prefWidth="111.33331298828125" text="Category" />
@@ -31,6 +31,12 @@
             <TableColumn fx:id="statustabcol" prefWidth="104.66668701171875" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="459.0" layoutY="407.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+      <Button layoutX="459.0" layoutY="429.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+      <Label layoutX="332.0" layoutY="71.0" text="Item ID:" />
+      <TextField fx:id="itemidtext" layoutX="411.0" layoutY="67.0" />
+      <Label layoutX="365.0" layoutY="104.0" text="Quantity:" />
+      <TextField fx:id="quantitytext" layoutX="444.0" layoutY="100.0" />
+      <Label layoutX="365.0" layoutY="142.0" text="Unit cost:" />
+      <TextField fx:id="unitcosttext" layoutX="444.0" layoutY="138.0" />
    </children>
 </AnchorPane>
