@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="421.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.HatcheryProduction.RecordFishBreedingBatchInformationController">
+   <children>
+      <Label layoutX="50.0" layoutY="14.0" text="BatchID" />
+      <Label layoutX="23.0" layoutY="48.0" text="ParentStockID" />
+      <Label layoutX="17.0" layoutY="108.0" prefHeight="17.0" prefWidth="90.0" text="BreedingMethod" />
+      <Label layoutX="8.0" layoutY="135.0" prefHeight="8.0" prefWidth="105.0" text="fertilization Method" />
+      <TextField fx:id="BatchIDTextfield" layoutX="105.0" layoutY="10.0" />
+      <TextField fx:id="parentIDTextfield" layoutX="105.0" layoutY="44.0" />
+      <ComboBox fx:id="breedingmethodCombobox" layoutX="112.0" layoutY="104.0" prefWidth="150.0" />
+      <ComboBox fx:id="fertilizationMethodCombobox" layoutX="124.0" layoutY="131.0" prefWidth="150.0" />
+      <Label layoutX="293.0" layoutY="23.0" text="Swapingdate" />
+      <DatePicker fx:id="SwapingdateDatepicker" layoutX="365.0" layoutY="19.0" />
+      <Button layoutX="319.0" layoutY="114.0" mnemonicParsing="false" onAction="#Addbreedingbatchbutton" prefHeight="75.0" prefWidth="115.0" text="AddbreedingBatch" />
+      <Button layoutX="187.0" layoutY="187.0" mnemonicParsing="false" onAction="#searchbutton" text="Search" />
+      <Button layoutX="246.0" layoutY="187.0" mnemonicParsing="false" onAction="#clearbutton" text="clear" />
+      <TextField fx:id="searchtextfield" layoutX="16.0" layoutY="187.0" />
+      <TableView fx:id="Tableview" layoutX="16.0" layoutY="223.0" prefHeight="179.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="batchidtablecolumn" prefWidth="86.00000250339508" text="BatchID" />
+          <TableColumn fx:id="speciestablecolumn" prefWidth="71.33333587646484" text="Species" />
+            <TableColumn fx:id="parentidTablecolumn" prefWidth="108.00001525878906" text="parentID" />
+            <TableColumn fx:id="breedingmethodTablecolumn" prefWidth="107.33331298828125" text="Breeding Method" />
+            <TableColumn fx:id="datetablecolumn" prefWidth="94.66668701171875" text="Date" />
+            <TableColumn fx:id="fertilizationMethodColumn" prefWidth="127.33331298828125" text="fertilization Method" />
+        </columns>
+      </TableView>
+      <TextField fx:id="SpeciesTextField" layoutX="104.0" layoutY="73.0" />
+      <Label layoutX="43.0" layoutY="77.0" text="Species" />
+   </children>
+</AnchorPane>

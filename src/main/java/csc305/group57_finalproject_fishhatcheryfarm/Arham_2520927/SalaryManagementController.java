@@ -1,5 +1,8 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class SalaryManagementController
 {
     @javafx.fxml.FXML

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AvailableBatchIDTextfield" prefHeight="595.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.HatcheryProduction.HatcheryTankAssignmentController">
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" text="Batch ID" />
+      <Label layoutX="280.0" layoutY="14.0" text="Tank ID" />
+      <ComboBox fx:id="batchIDCombobox" layoutX="89.0" layoutY="10.0" prefWidth="150.0" />
+      <Label layoutX="32.0" layoutY="52.0" text="Species" />
+      <Label layoutX="31.0" layoutY="90.0" text="EggSize" />
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="207.0" prefHeight="194.0" prefWidth="544.0">
+        <columns>
+          <TableColumn fx:id="batchIDtableColumn" prefWidth="104.66668891906738" text="Batch ID" />
+          <TableColumn fx:id="tankIDTablecolumn" prefWidth="89.99996185302734" text="TankID" />
+            <TableColumn fx:id="SpeciesTablecolumn" prefWidth="86.66670227050781" text="Species" />
+            <TableColumn fx:id="eggsizetablecolumn" prefWidth="71.33331298828125" text="EggSize" />
+            <TableColumn fx:id="assignedTankTablecolumn" prefWidth="112.6666259765625" text="Assigned Tank" />
+            <TableColumn fx:id="StstusTablecolumn" prefWidth="76.00003051757812" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="eggsizeTextField" layoutX="89.0" layoutY="86.0" />
+      <TextField fx:id="TankIdTextfield" layoutX="332.0" layoutY="10.0" />
+      <Button layoutX="230.0" layoutY="172.0" mnemonicParsing="false" onAction="#clearbutton" text="Clear" />
+      <Button layoutX="238.0" layoutY="118.0" mnemonicParsing="false" onAction="#assigntankButton" text="assign" />
+      <ComboBox fx:id="speciesCombobox" layoutX="89.0" layoutY="48.0" prefWidth="150.0" />
+      <Label layoutX="282.0" layoutY="52.0" text="Assigned Tank" />
+      <TextField fx:id="AssignedTankTextfield" layoutX="368.0" layoutY="48.0" />
+      <ComboBox fx:id="filterComboBox" layoutX="14.0" layoutY="172.0" prefWidth="150.0" />
+      <Button layoutX="175.0" layoutY="172.0" mnemonicParsing="false" onAction="#filterButton" text="Filter" />
+   </children>
+</AnchorPane>

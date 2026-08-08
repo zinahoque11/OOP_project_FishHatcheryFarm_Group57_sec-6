@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.group57_finalproject_fishhatcheryfarm.Farin_2312086.DeliveryAndSales.OrderrequestCONTROLLER_NAME">
+   <children>
+      <Label layoutX="30.0" layoutY="31.0" text="CustomerName" />
+      <Label layoutX="29.0" layoutY="65.0" text="CustomerPhone" />
+      <TextField fx:id="CustomerNameTextField" layoutX="124.0" layoutY="27.0" />
+      <TextField fx:id="CustomerPhoneTextfield" layoutX="116.0" layoutY="58.0" />
+      <Label layoutX="72.0" layoutY="110.0" text="FishSpecies" />
+      <ComboBox fx:id="FishSpeciesCombobox" layoutX="142.0" layoutY="106.0" prefWidth="150.0" />
+      <Button layoutX="60.0" layoutY="147.0" mnemonicParsing="false" onAction="#OrderButton" text="Order" />
+      <Button layoutX="142.0" layoutY="147.0" mnemonicParsing="false" onAction="#ClearButton" text="clear" />
+      <TableView fx:id="Tableview" layoutX="41.0" layoutY="207.0" prefHeight="200.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="OrderIDTablecolumn" prefWidth="126.6666259765625" text="OrderID" />
+          <TableColumn fx:id="CustomerTablecolumn" prefWidth="86.66668701171875" text="Customer" />
+            <TableColumn fx:id="SpeciesTablecolumn" prefWidth="86.66668701171875" text="Species" />
+            <TableColumn fx:id="QuantityTablecolumn" minWidth="2.0" prefWidth="86.66668701171875" text="Quantity" />
+            <TableColumn fx:id="StatusTablecolumn" prefWidth="112.6666259765625" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="300.0" layoutY="22.0" text="Quantity" />
+      <Label layoutX="292.0" layoutY="53.0" text="EstimatedPrice" />
+      <TextField fx:id="QuantityTextfield" layoutX="360.0" layoutY="18.0" />
+      <TextField fx:id="EstimatedPriceTextfield" layoutX="389.0" layoutY="49.0" />
+      <Button layoutX="230.0" layoutY="147.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
+   </children>
+</AnchorPane>
