@@ -1,39 +1,75 @@
 package csc305.group57_finalproject_fishhatcheryfarm.Arham_2520927;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
 
-public class ProductionplanningController
-{
-    @javafx.fxml.FXML
-    private TableView productiontplanningtable;
-    @javafx.fxml.FXML
-    private TextField fishtypetext;
-    @javafx.fxml.FXML
-    private TableColumn deadlinetabcol;
-    @javafx.fxml.FXML
-    private TableColumn fishtypetabcol;
-    @javafx.fxml.FXML
-    private TableColumn statustabcol;
-    @javafx.fxml.FXML
-    private TableColumn targetfishquantitytabcol;
-    @javafx.fxml.FXML
-    private TextField targetfishquantitytext;
-    @javafx.fxml.FXML
+import java.time.LocalDate;
+
+public class ProductionplanningController {
+
+    @FXML private TextField targetfishquantitytext;
+    @FXML private TextField fishtypetext;
+    @FXML
     private DatePicker deadlinedatepicker;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML private TableView<productionplanning> productiontplanningtable;
+    @FXML private TableColumn<productionplanning, Integer> targetfishquantitytabcol;
+    @FXML private TableColumn<productionplanning, String> fishtypetabcol;
+    @FXML private TableColumn<productionplanning, LocalDate> deadlinetabcol;
+    @FXML private TableColumn<productionplanning, String> statustabcol;
+
+    private ObservableList<productionplanning> planningData = FXCollections.observableArrayList();
+
+    @FXML
+    private void initialize() {
+        // Bind table columns to model properties
+        targetfishquantitytabcol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleObjectProperty<>(cellData.getValue().getTargetFishQuantity()));
+        fishtypetabcol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getFishType()));
+        deadlinetabcol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleObjectProperty<>(cellData.getValue().getDeadline()));
+        statustabcol.setCellValueFactory(cellData -> new javafx.beans.property.SimpleStringProperty(cellData.getValue().getStatus()));
+
+        productiontplanningtable.setItems(planningData);
     }
 
-    @javafx.fxml.FXML
-    public void Backbutton(ActionEvent actionEvent) {
+    @FXML
+    private void updatebutton(ActionEvent event) {
+        try {
+            int targetQuantity = Integer.parseInt(targetfishquantitytext.getText());
+            String fishType = fishtypetext.getText();
+            LocalDate deadline = deadlinedatepicker.getValue();
+            String status = "Planned"; // default status
+
+            productionplanning newPlan = new productionplanning(targetQuantity, fishType, deadline, status);
+            planningData.add(newPlan);
+
+            showSuccessAlert("Production plan updated successfully!");
+        } catch (Exception e) {
+            showErrorAlert("Invalid input. Please check your entries.");
+        }
     }
 
-    @javafx.fxml.FXML
-    public void updatebutton(ActionEvent actionEvent) {
+    @FXML
+    private void Backbutton(ActionEvent event) {
+        // Logic to go back to previous screen
+        System.out.println("Back button clicked.");
+    }
+
+    private void showSuccessAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Success");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+    private void showErrorAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }

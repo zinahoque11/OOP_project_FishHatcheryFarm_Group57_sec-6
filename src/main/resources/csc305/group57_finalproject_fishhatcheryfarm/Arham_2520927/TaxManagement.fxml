@@ -22,7 +22,7 @@
       <DatePicker fx:id="paydatedatepicker" layoutX="426.0" layoutY="152.0" prefHeight="25.0" prefWidth="159.0" />
       <TextField fx:id="totaltaxduetext" layoutX="119.0" layoutY="20.0" />
       <TextField fx:id="payamounttext" layoutX="122.0" layoutY="152.0" />
-      <TableView fx:id="taxmanagementtable" layoutX="25.0" layoutY="269.0" prefHeight="200.0" prefWidth="550.0">
+      <TableView fx:id="taxmanagementtable" layoutX="33.0" layoutY="294.0" prefHeight="200.0" prefWidth="550.0">
         <columns>
           <TableColumn fx:id="taxtypetabcol" prefWidth="103.33331298828125" text="Tax Type" />
           <TableColumn fx:id="expensetitletabcol" prefWidth="86.66665649414062" text="Expense Title" />
@@ -31,8 +31,12 @@
             <TableColumn fx:id="statustabcol" prefWidth="128.0" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="433.0" layoutY="216.0" mnemonicParsing="false" onAction="#confirmpaaymentbutton" text="Confirm payment" />
+      <Button layoutX="464.0" layoutY="261.0" mnemonicParsing="false" onAction="#confirmpaaymentbutton" text="Confirm payment" />
       <Line endX="463.3333740234375" layoutX="126.0" layoutY="120.0" startX="-100.0" />
-      <Button layoutX="444.0" layoutY="487.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
+      <Button layoutX="444.0" layoutY="507.0" mnemonicParsing="false" onAction="#Backbutton" text="Back" />
+      <TextField fx:id="taxidtext" layoutX="416.0" layoutY="20.0" />
+      <Label layoutX="358.0" layoutY="24.0" text="Tax ID:" />
+      <Label layoutX="360.0" layoutY="64.0" text="Tax type:" />
+      <ComboBox fx:id="taxtypecombo" layoutX="419.0" layoutY="60.0" prefHeight="25.0" prefWidth="143.0" />
    </children>
 </AnchorPane>
